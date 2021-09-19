@@ -1,0 +1,10 @@
+.header {
+    font-family: var(--font-heading);
+    display: grid;
+    grid-template-columns: var(--grid-spec);
+    grid-gap: var(--sp-xs);
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: var(--sp-s) 0;
+}

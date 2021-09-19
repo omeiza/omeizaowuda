@@ -1,0 +1,15 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: var(--grid-spec);
+    grid-gap: var(--sp-xs);
+    flex-wrap: wrap;
+    margin: var(--sp-s) 0;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: var(--content-grid-spec);
+    grid-column: var(--center-column);
+    grid-gap: var(--sp-xs);
+    margin-bottom: var(--sp-xxl);
+}
