@@ -1,0 +1,12 @@
+.section {
+    padding: var(--sp-xxl) 0;
+    background-color: rgba(var(--white), 0.25);
+    border-top: 2px solid var(--theme-color);
+    border-bottom: 2px solid var(--theme-color);
+
+    h2 {
+        em {
+            color: var(--text-color);
+        }
+    }
+}

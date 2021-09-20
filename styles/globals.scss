@@ -1,7 +1,8 @@
 :root {
-    --background: #FCF4F6;
+    --background: #FFFFFF;
+    --white: #FFFFFF;
     --background-dark: #000000;
-    --text-color: #252525;
+    --text-color: #000;
     --text-color-dark: #FFFFFF;
     --theme-color: #FF6347;
     --baseline: 1.6;
@@ -12,6 +13,7 @@
     --l: 1.5;
     --xl: 2.25;
     --xxl: 3;
+    --xxxl: 4;
     --sp-xxs: calc(var(--xxs) * 1rem);
     --sp-xs: calc(var(--xs) * 1rem);
     --sp-s: calc(var(--s) * 1rem);
@@ -19,11 +21,13 @@
     --sp-l: calc(var(--l) * 1rem);
     --sp-xl: calc(var(--xl) * 1rem);
     --sp-xxl: calc(var(--xxl) * 1rem);
-    --container-width: 42rem;
-    --content-width: 28rem;
+    --sp-xxxl: calc(var(--xxxl) * 1rem);
+    --container-width: 36rem;
+    --content-width: 24rem;
     --center-column: 2 / 3;
-    --grid-spec: minmax(0,1fr) minmax(auto,var(--container-width)) minmax(0,1fr);
-    --content-grid-spec: minmax(0,1fr) minmax(auto, var(--content-width));
+    --grid-spec: minmax(0, 1fr) minmax(auto,var(--container-width)) minmax(0, 1fr);
+    --content-grid-spec: minmax(0, 1fr) minmax(auto, var(--content-width));
+    --sub-content-grid-spec: minmax(0, 1fr) minmax(auto, var(--content-width)) minmax(0, 1fr);
     --font-sans: 'National2Web', sans-serif;
     --font-serif: 'IBM Plex Serif', serif;
     --font-body: var(--font-sans);
@@ -40,12 +44,15 @@ html {
     background-color: var(--background);
     color: var(--text-color);
     font-size: clamp(100%, 2.5vw, 125%);
+    font-weight: 100;
     font-family: var(--font-body);
     line-height: var(--baseline);
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+main {
     padding-left: 20px;
     padding-right: 20px;
-    text-rendering: optimizeLegibility !important;
-    -webkit-font-smoothing: antialiased !important;
 }
 
 a {
@@ -59,12 +66,11 @@ a {
 
 h2 {
     font-size: 42px;
-    margin-top: 0;
     line-height: 1;
 }
 
 h2, h3 {
+    margin-top: 0;
     font-family: var(--font-heading);
-    color: var(--text-color);
-    font-weight: 300;
+    font-weight: 100;
 }

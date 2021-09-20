@@ -1,0 +1,58 @@
+.articles,
+.experience {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    li {
+        font-family: var(--font-heading);
+        padding: var(--sp-s) 0;
+        line-height: 1.2;
+
+        a {
+            text-decoration: none;
+            font-size: 28px;
+            color: inherit;
+            font-weight: 100;
+        }
+
+        span {
+            color: rgba(var(--text-color), .6);
+            display: block;
+            font-weight: 500;
+            font-size: 12px;
+            font-family: var(--font-body);
+        }
+
+        &:first-of-type {
+            padding-top: 0;
+        }
+
+        &:last-of-type {
+            border: none;
+            padding-bottom: 0;
+        }
+    }
+}
+
+.articles {
+    span {
+        margin-top: var(--sp-xs);
+    }
+
+    li {
+        border-bottom: 1px solid rgba(#8d8f9a, 0.4);
+    }
+}
+
+.experience {
+    span {
+        margin: var(--sp-xs) 0;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.6;
+        font-family: var(--font-body);
+    }
+}

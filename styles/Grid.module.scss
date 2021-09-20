@@ -9,7 +9,15 @@
 .content {
     display: grid;
     grid-template-columns: var(--content-grid-spec);
-    grid-column: var(--center-column);
     grid-gap: var(--sp-xs);
-    margin-bottom: var(--sp-xxl);
+}
+
+.subcontent {
+    display: grid;
+    // grid-template-columns: var(--sub-content-grid-spec);
+    grid-gap: var(--sp-xs);
+}
+
+.centered {
+    grid-column: var(--center-column);
 }

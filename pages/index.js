@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Header from "./../src/components/Header";
 import Grid from "./../styles/Grid.module.scss";
+import List from "./../styles/List.module.scss";
 
 export default function Home() {
     return (
@@ -14,25 +15,73 @@ export default function Home() {
                 </Head>
                 <main>
                     <Header />
-                    <div className={Grid.wrapper}>
-                        <div id="about" className={Grid.content}>
-                            <h2>About me?</h2>
+                    <div id="main-content" className={Grid.wrapper}>
+                        <div id="about" className={`about-section ${Grid.content} ${Grid.centered}`}>
+                            <h2>About</h2>
                             <div>
-                                Well, I’m a designer with 20 years of experience in brand, product design, and creative direction. I have an international reputation for creating warm, smart, and effective design for a variety of companies in technology and publishing. Among these is Abstract, which I co-founded in 2014. I’m currently creative director at Fictive Kin.
+                                <p>Well, I’m a designer with 20 years of experience in brand, product design, and creative direction. I have an international reputation for creating warm, smart, and effective design for a variety of companies in technology and publishing. Among these is Abstract, which I co-founded in 2014. I’m currently creative director at Fictive Kin.</p>
+                                <p>I also write and speak about design. Several of my essays and lectures are assigned in design classrooms around the world and act as foundational texts in the web design industry, including Everything Easy is Hard Again, The Web’s Grain, and What Screens Want. In 2012, I wrote, illustrated, and published The Shape of Design.</p>
                             </div>
                         </div>
-                        <div id="select-writing" className={Grid.content}>
+                        <div id="select-writing" className={`writing-section ${Grid.content} ${Grid.centered}`}>
                             <h2>Select Writing</h2>
                             <div>
-                                Well, I’m a designer with 20 years of experience in brand, product design, and creative direction. I have an international reputation for creating warm, smart, and effective design for a variety of companies in technology and publishing. Among these is Abstract, which I co-founded in 2014. I’m currently creative director at Fictive Kin.
+                                <ul className={List.articles}>
+                                    <li><a href="">3 Strategies For Effective Cross-Team Collaboration</a><span>APRIL 6, 2020</span></li>
+                                    <li><a>3×3 GTD: A Priority-Driven To Do List</a><span>MAY 26, 2020</span></li>
+                                    <li><a>Square Peg, Round Hole: Typed Programming For Designers</a><span>JUNE 6, 2020</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="experience-section" className={`experience-section ${Grid.centered}`}>
+                            <h2>Work Experience</h2>
+                            <div>
+                                <ul className={List.experience}>
+                                    <li className={Grid.content}>
+                                        <h3>SEPT 2020 - PRESENT</h3>
+                                        <div>
+                                            <a href="">Software Developer</a>
+                                            <span>BIG CABAL MEDIA</span>
+                                            <p>Setting creative vision, providing design leadership, establishing process, and managing client relationships, while participating as an IC at a leading digital agency whose clients include Sweetgreen, Ogilvy, National Geographic, TripAdvisor, and Samsung.</p>
+                                        </div>
+                                        
+                                    </li>
+                                    <li className={Grid.content}>
+                                        <h3>1</h3>
+                                        <a href="">Software Developer <span>NOTJUSTOK INC</span></a>
+                                    </li>
+                                    <li className={Grid.content}>
+                                        <h3>1</h3>
+                                        <a href="">Full-stack Web Developer <span>VENTRA MEDIA GROUP</span></a>
+                                    </li>
+                                    <li className={Grid.content}>
+                                        <h3></h3>
+                                        <a href="">Full-stack Web Developer <span>CKDIGITAL</span></a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </main>
             </div>
             <style jsx>{`
-                header {
-                    
+                .about-section,
+                .writing-section,
+                .experience-section {
+                    padding: var(--sp-xxl) 0;
+                }
+
+                p {
+                    margin-top: 0;
+                }
+
+                main {
+                    padding-bottom: var(--sp-xxl);
+                }
+                
+                h2 em {
+                    display: block;
+                    color: #8d8f9a;
                 }
             `}</style>
         </>
