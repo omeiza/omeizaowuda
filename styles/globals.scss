@@ -1,9 +1,9 @@
 :root {
-    --background: #FFFFFF;
+    --background: #fdefe7;
     --white: #FFFFFF;
     --background-dark: #000000;
-    --text-color: #252525;
-    --text-color-shade: #333333;
+    --text-color: #0d4027;
+    --text-color-hover: rgba(248, 100, 1);
     --text-color-dark: #FFFFFF;
     --theme-color: #dd5c4c;
     --baseline: 1.5;
@@ -23,14 +23,14 @@
     --sp-xl: calc(var(--xl) * 1rem);
     --sp-xxl: calc(var(--xxl) * 1rem);
     --sp-xxxl: calc(var(--xxxl) * 1rem);
-    --container-width: 40rem;
-    --content-width: 26rem;
+    --container-width: 26rem;
+    --content-width: 36rem;
     --center-column: 2 / 3;
     --grid-spec: minmax(0, 1fr) minmax(auto,var(--container-width)) minmax(0, 1fr);
     --content-grid-spec: minmax(0, 1fr) minmax(auto, var(--content-width));
     --sub-content-grid-spec: minmax(0, 1fr) minmax(auto, var(--content-width)) minmax(0, 1fr);
-    --font-sans: 'National2Web', sans-serif;
-    --font-serif: 'IBM Plex Serif', serif;
+    --font-sans: 'Sombra', sans-serif;
+    --font-serif: 'Sombra', serif;
     --font-body: var(--font-sans);
     --font-heading: var(--font-serif);
 }
@@ -44,17 +44,17 @@ body {
 html {
     background-color: var(--background);
     color: var(--text-color);
-    font-size: clamp(100%, 2.5vw, 125%);
+    font-size: clamp(100%, 2.4vw, 140%);
     font-weight: 100;
     font-family: var(--font-body);
     line-height: var(--baseline);
-    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-font-smoothing: antialiased;
 }
 
-// main {
-//     padding-left: 20px;
-//     padding-right: 20px;
-// }
+main {
+    padding-left: var(--sp-l);
+    padding-right: var(--sp-l);
+}
 
 a {
     color: inherit;
@@ -65,12 +65,7 @@ a {
     box-sizing: border-box;
 }
 
-h2 {
-    font-size: 44px;
-    line-height: 1;
-}
-
-h2, h3 {
+h1, h2, h3 {
     margin-top: 0;
     font-family: var(--font-heading);
     font-weight: 100;

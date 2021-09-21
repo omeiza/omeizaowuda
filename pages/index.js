@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Header from "./../src/components/Header";
+import Footer from "./../src/components/Footer"
 import Grid from "./../styles/Grid.module.scss";
 import List from "./../styles/List.module.scss";
+import Photo from "./../public/images/face.jpeg";
 
 export default function Home() {
     return (
@@ -15,17 +17,19 @@ export default function Home() {
                 </Head>
                 <main>
                     <Header />
-                    <section id="about-section" className={`about-section ${Grid.wrapper}`}>
+                    <section id="writing-section" className={`writing-section ${Grid.wrapper}`}>
                         <div className={`${Grid.centered}`}>
-                            <h2>Ueno is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</h2>
+                            <Image src={Photo} />
                             <div>
-                                <p>Well, I’m a designer with 20 years of experience in brand, product design, and creative direction. I have an international reputation for creating warm, smart, and effective design for a variety of companies in technology and publishing. Among these is Abstract, which I co-founded in 2014. I’m currently creative director at Fictive Kin.</p>
-                                <p>I also write and speak about design. Several of my essays and lectures are assigned in design classrooms around the world and act as foundational texts in the web design industry, including Everything Easy is Hard Again, The Web’s Grain, and What Screens Want. In 2012, I wrote, illustrated, and published The Shape of Design.</p>
+                                <p>Daniel Eden is a Design Manager at Facebook in London, supporting Facebook’s Commerce organisation. He spends his time writing, thinking, tweeting, and talking about Design Systems: how they scale, how they break, and the people that maintain them.</p>
+                                <p className="push-right">
+                                    <a href="">Read more <span className="link-emoji">↓</span></a>
+                                </p>
                             </div>
                         </div>
                     </section>
                     <section id="writing-section" className={`writing-section ${Grid.wrapper}`}>
-                        <div className={`${Grid.content} ${Grid.centered}`}>
+                        <div className={`${Grid.centered}`}>
                             <h2>Select Writing</h2>
                             <div>
                                 <ul className={List.articles}>
@@ -36,78 +40,41 @@ export default function Home() {
                             </div>
                         </div>
                     </section>
-                    <section id="experience-section"  className={`experience-section ${Grid.wrapper}`}>
-                        <div className={`${Grid.content} ${Grid.centered}`}>
-                            <h2>Work Experience</h2>
-                            <div>
-                                <ul className={List.experience}>
-                                    <li>
-                                        <div>
-                                            <a href="">Software Developer</a>
-                                            <span>BIG CABAL MEDIA</span>
-                                            <p>Setting creative vision, providing design leadership, establishing process, and managing client relationships, while participating as an IC at a leading digital agency whose clients include Sweetgreen, Ogilvy, National Geographic, TripAdvisor, and Samsung.</p>
-                                        </div>
-                                        
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <a href="">Software Developer</a>
-                                            <span>NOTJUSTOK INC</span>
-                                            <p>Design and consulting for early stage startups and established leaders at the intersection of brand and digital product. Clients included: Etsy, Meetup, Kaplan, Abstract, and many YC startups.</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <a href="">Full-stack Web Developer</a>
-                                            <span>VENTRA MEDIA GROUP</span>
-                                            <p>The traditional set of founder responsibilities: setting vision, creating product definition, fundraising, and company leadership. Lead design across brand and product, and helped define the company’s go-to-market approach.</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a href="">Front-end Developer</a>
-                                        <span>CKDIGITAL</span>
-                                        <p>Product design, web design, publication design, branding, and illustration. Clients include: Nike, Microsoft, NPR, Adobe, Facebook, WIRED, Bloomberg Businessweek, O’Reilly Media, The Atlantic, and Justin Bieber (sorta).</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
+                    <Footer />
                 </main>
             </div>
             <style jsx>{`
-                .about-section,
-                .writing-section,
-                .experience-section {
-                    padding: var(--sp-xxxl) 0;
-                }
-
                 .writing-section {
-                    background-color: #fafafa;
-                }
-
-                .about-section h2 {
-                    width: 80%;
-                    font-size: 40px;
-                    font-weight: 500;
-                    color: var(--black);
-                    line-height: 1.2;
+                    padding: var(--sp-xl) 0;
                 }
 
                 p {
-                    margin-top: 0;
+                    font-family: var(--font-body);
+                    font-weight: 400;
+                    line-height: 1.4;
                 }
 
-                main {
-                    padding-bottom: var(--sp-xxl);
+                .push-right {
+                    text-align: right;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    font-weight: 700;
+                }
+
+                span.link-emoji {
+                    transform: rotate(-90deg);
+                    display: inline-block;
                 }
 
                 h2 {
-                    color: #777777;
+                    font-family: var(--font-body);
+                    font-size: 32px
+                    line-height: 0.95;
+                    font-weight: 500;
                 }
-                
+
                 h2 em {
-                    display: block;
-                    color: #8d8f9a;
+                    font-weight: 100;
                 }
             `}</style>
         </>

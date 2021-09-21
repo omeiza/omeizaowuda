@@ -1,14 +1,14 @@
 .wrapper {
     display: grid;
     grid-template-columns: var(--grid-spec);
-    grid-gap: var(--sp-xs);
+    grid-gap: var(--sp-l);
     flex-wrap: wrap;
 }
 
 .content {
     display: grid;
     grid-template-columns: var(--content-grid-spec);
-    grid-gap: var(--sp-s);
+    grid-gap: var(--sp-l);
 }
 
 .subcontent {

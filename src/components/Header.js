@@ -1,37 +1,34 @@
 import Image from 'next/image';
 import Grid from "./../../styles/Grid.module.scss";
-import Logo from "./../../public/images/omz-logo.png"
 
 const Header = () => {
     return (
         <>
-            <header className={Grid.wrapper}>
-                <div className={`${Grid.content} ${Grid.centered}`}>
-                    <span>
-                        <a href="/" >
-                            <Image src={Logo} width={60} height={41} alt="Omeiza Owuda Logo" />
-                        </a>
-                    </span>
-                    <nav>
-                        <ul>
-                            <li>Blog</li>
-                            <li>Portfolio</li>
-                            <li>Newsletter</li>
-                        </ul>
-                    </nav>
+            <header id="header" className={`${Grid.wrapper}`}>
+                <div>
+                    <h1>omeiza. <em>Software Developer</em></h1>
                 </div>
             </header>
             <style jsx>{`
                 header {
-                    padding: var(--sp-l) 0;
+                    padding: var(--sp-s) 0;
                 }
 
-                nav ul {
-                    list-style: none;
+                h1 {
+                    font-family: var(--font-body);
+                    position: fixed;
+                    left: var(--sp-l);
+                    top: var(--sp-l);
+                    font-weight: 700;
+                    font-size: var(--sp-l);
+                    line-height: 0.95;
                 }
 
-                nav li {
-                    display: inline-block;
+                h1 em {
+                    font-size: var(--sp-s);
+                    display: block;
+                    font-weight: 400;
+                    
                 }
             `}</style>
         </>
