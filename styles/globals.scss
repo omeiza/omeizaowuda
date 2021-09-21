@@ -2,10 +2,11 @@
     --background: #FFFFFF;
     --white: #FFFFFF;
     --background-dark: #000000;
-    --text-color: #000;
+    --text-color: #252525;
+    --text-color-shade: #333333;
     --text-color-dark: #FFFFFF;
-    --theme-color: #FF6347;
-    --baseline: 1.6;
+    --theme-color: #dd5c4c;
+    --baseline: 1.5;
     --xxs: 0.125;
     --xs: 0.5;
     --s: 0.75;
@@ -13,7 +14,7 @@
     --l: 1.5;
     --xl: 2.25;
     --xxl: 3;
-    --xxxl: 4;
+    --xxxl: 6;
     --sp-xxs: calc(var(--xxs) * 1rem);
     --sp-xs: calc(var(--xs) * 1rem);
     --sp-s: calc(var(--s) * 1rem);
@@ -22,8 +23,8 @@
     --sp-xl: calc(var(--xl) * 1rem);
     --sp-xxl: calc(var(--xxl) * 1rem);
     --sp-xxxl: calc(var(--xxxl) * 1rem);
-    --container-width: 36rem;
-    --content-width: 24rem;
+    --container-width: 40rem;
+    --content-width: 26rem;
     --center-column: 2 / 3;
     --grid-spec: minmax(0, 1fr) minmax(auto,var(--container-width)) minmax(0, 1fr);
     --content-grid-spec: minmax(0, 1fr) minmax(auto, var(--content-width));
@@ -50,10 +51,10 @@ html {
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
-main {
-    padding-left: 20px;
-    padding-right: 20px;
-}
+// main {
+//     padding-left: 20px;
+//     padding-right: 20px;
+// }
 
 a {
     color: inherit;
@@ -65,7 +66,7 @@ a {
 }
 
 h2 {
-    font-size: 42px;
+    font-size: 44px;
     line-height: 1;
 }
 

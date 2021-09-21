@@ -15,15 +15,17 @@ export default function Home() {
                 </Head>
                 <main>
                     <Header />
-                    <div id="main-content" className={Grid.wrapper}>
-                        <div id="about" className={`about-section ${Grid.content} ${Grid.centered}`}>
-                            <h2>About</h2>
+                    <section id="about-section" className={`about-section ${Grid.wrapper}`}>
+                        <div className={`${Grid.centered}`}>
+                            <h2>Ueno is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</h2>
                             <div>
                                 <p>Well, I’m a designer with 20 years of experience in brand, product design, and creative direction. I have an international reputation for creating warm, smart, and effective design for a variety of companies in technology and publishing. Among these is Abstract, which I co-founded in 2014. I’m currently creative director at Fictive Kin.</p>
                                 <p>I also write and speak about design. Several of my essays and lectures are assigned in design classrooms around the world and act as foundational texts in the web design industry, including Everything Easy is Hard Again, The Web’s Grain, and What Screens Want. In 2012, I wrote, illustrated, and published The Shape of Design.</p>
                             </div>
                         </div>
-                        <div id="select-writing" className={`writing-section ${Grid.content} ${Grid.centered}`}>
+                    </section>
+                    <section id="writing-section" className={`writing-section ${Grid.wrapper}`}>
+                        <div className={`${Grid.content} ${Grid.centered}`}>
                             <h2>Select Writing</h2>
                             <div>
                                 <ul className={List.articles}>
@@ -33,12 +35,13 @@ export default function Home() {
                                 </ul>
                             </div>
                         </div>
-                        <div id="experience-section" className={`experience-section ${Grid.centered}`}>
+                    </section>
+                    <section id="experience-section"  className={`experience-section ${Grid.wrapper}`}>
+                        <div className={`${Grid.content} ${Grid.centered}`}>
                             <h2>Work Experience</h2>
                             <div>
                                 <ul className={List.experience}>
-                                    <li className={Grid.content}>
-                                        <h3>SEPT 2020 - PRESENT</h3>
+                                    <li>
                                         <div>
                                             <a href="">Software Developer</a>
                                             <span>BIG CABAL MEDIA</span>
@@ -46,29 +49,48 @@ export default function Home() {
                                         </div>
                                         
                                     </li>
-                                    <li className={Grid.content}>
-                                        <h3>1</h3>
-                                        <a href="">Software Developer <span>NOTJUSTOK INC</span></a>
+                                    <li>
+                                        <div>
+                                            <a href="">Software Developer</a>
+                                            <span>NOTJUSTOK INC</span>
+                                            <p>Design and consulting for early stage startups and established leaders at the intersection of brand and digital product. Clients included: Etsy, Meetup, Kaplan, Abstract, and many YC startups.</p>
+                                        </div>
                                     </li>
-                                    <li className={Grid.content}>
-                                        <h3>1</h3>
-                                        <a href="">Full-stack Web Developer <span>VENTRA MEDIA GROUP</span></a>
+                                    <li>
+                                        <div>
+                                            <a href="">Full-stack Web Developer</a>
+                                            <span>VENTRA MEDIA GROUP</span>
+                                            <p>The traditional set of founder responsibilities: setting vision, creating product definition, fundraising, and company leadership. Lead design across brand and product, and helped define the company’s go-to-market approach.</p>
+                                        </div>
                                     </li>
-                                    <li className={Grid.content}>
-                                        <h3></h3>
-                                        <a href="">Full-stack Web Developer <span>CKDIGITAL</span></a>
+                                    <li>
+                                        <a href="">Front-end Developer</a>
+                                        <span>CKDIGITAL</span>
+                                        <p>Product design, web design, publication design, branding, and illustration. Clients include: Nike, Microsoft, NPR, Adobe, Facebook, WIRED, Bloomberg Businessweek, O’Reilly Media, The Atlantic, and Justin Bieber (sorta).</p>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </section>
                 </main>
             </div>
             <style jsx>{`
                 .about-section,
                 .writing-section,
                 .experience-section {
-                    padding: var(--sp-xxl) 0;
+                    padding: var(--sp-xxxl) 0;
+                }
+
+                .writing-section {
+                    background-color: #fafafa;
+                }
+
+                .about-section h2 {
+                    width: 80%;
+                    font-size: 40px;
+                    font-weight: 500;
+                    color: var(--black);
+                    line-height: 1.2;
                 }
 
                 p {
@@ -77,6 +99,10 @@ export default function Home() {
 
                 main {
                     padding-bottom: var(--sp-xxl);
+                }
+
+                h2 {
+                    color: #777777;
                 }
                 
                 h2 em {

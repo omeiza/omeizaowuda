@@ -6,14 +6,15 @@
     
     li {
         font-family: var(--font-heading);
-        padding: var(--sp-s) 0;
+        padding: var(--sp-l) 0;
         line-height: 1.2;
+        border-bottom: 1px solid rgba(#ccc, 0.7);
 
         a {
             text-decoration: none;
             font-size: 28px;
             color: inherit;
-            font-weight: 100;
+            font-weight: 300;
         }
 
         span {
@@ -40,8 +41,8 @@
         margin-top: var(--sp-xs);
     }
 
-    li {
-        border-bottom: 1px solid rgba(#8d8f9a, 0.4);
+    li a {
+        color: var(--text-color-shade);
     }
 }
 
