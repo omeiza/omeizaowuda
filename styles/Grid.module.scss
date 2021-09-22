@@ -1,20 +1,20 @@
 .wrapper {
     display: grid;
     grid-template-columns: var(--grid-spec);
-    grid-gap: var(--sp-l);
+    grid-gap: var(--sp-xl);
     flex-wrap: wrap;
 }
 
 .content {
     display: grid;
     grid-template-columns: var(--content-grid-spec);
-    grid-gap: var(--sp-l);
+    grid-gap: var(--sp-xl);
 }
 
 .subcontent {
     display: grid;
     // grid-template-columns: var(--sub-content-grid-spec);
-    grid-gap: var(--sp-xs);
+    grid-gap: var(--sp-l);
 }
 
 .centered {

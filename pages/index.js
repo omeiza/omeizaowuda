@@ -61,6 +61,16 @@ export default function Home() {
                     font-weight: 700;
                 }
 
+                .push-right a {
+                    display: inline-block;
+                    transition: color .2s, transform .2s;
+                }
+
+                .push-right a:hover {
+                    transform: translate(5px);
+                    color: var(--text-color-hover);
+                }
+
                 span.link-emoji {
                     transform: rotate(-90deg);
                     display: inline-block;

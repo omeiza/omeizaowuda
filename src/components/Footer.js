@@ -5,11 +5,11 @@ const Footer = () => {
     return (
         <>
             <footer id="footer" className={`${Grid.wrapper}`}>
-                <div>
-                    Hello
+                <div className="footer-info">
+                    <p>Written, designed, and built by Omeiza Owuda, a Software Developer who you can find on Twitter, GitHub, or good old-fashioned Email.</p>
                 </div>
                 <div className={`${Grid.wrapper}`}>
-                    Hello
+                    
                 </div>
                 <p className="site-copyright">© Omeiza Owuda</p>
             </footer>
@@ -19,14 +19,19 @@ const Footer = () => {
                 }
 
                 .site-copyright {
-                    font-weight: 700;
+                    font-weight: 500;
                     writing-mode: vertical-lr;
                     font-size: 14px;
-                    -ms-flex-item-align: end;
-                    align-self: flex-end;
+                    align-self: flex-start;
                     -webkit-transform: rotate(180deg);
                     -ms-transform: rotate(180deg);
                     transform: rotate(180deg);
+                }
+
+                .footer-info {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 1.35;
                 }
             `}</style>
         </>
