@@ -13,7 +13,7 @@
 
 .subcontent {
     display: grid;
-    // grid-template-columns: var(--sub-content-grid-spec);
+    grid-template-columns: var(--sub-content-grid-spec);
     grid-gap: var(--sp-l);
 }
 

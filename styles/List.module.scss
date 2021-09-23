@@ -5,14 +5,14 @@
     padding: 0;
     
     li {
-        font-family: var(--font-heading);
+        font-family: var(--font-sans);
         padding: var(--sp-s) 0;
         line-height: 1.2;
         border-bottom: 1px dashed rgba(#ccc, 0.7);
 
         a {
             text-decoration: none;
-            font-size: 28px;
+            font-size: 26px;
             color: var(--text-color);
             font-weight: 400;
             transition: color .2s;

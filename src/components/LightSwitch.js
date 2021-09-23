@@ -1,7 +1,8 @@
-import Image from 'next/image';
-import Grid from "./../../styles/Grid.module.scss";
+import React from "react";
 
 const LightSwitch = () => {
+    const [checked, setChecked] = React.useState(true);
+
     return (
         <>
             <div className="lightswitch">
@@ -33,7 +34,13 @@ const LightSwitch = () => {
                 </div>
                 <div className="toggle-theme w-embed">
                     <label htmlFor="toggleTheme" title="Toggle theme">
-                        <input id="toggleTheme" name="theme" type="checkbox" />
+                        <input 
+                            id="toggleTheme" 
+                            name="theme" 
+                            type="checkbox"
+                            defaultChecked={checked}
+                            onChange={() => setChecked(!checked)}
+                        />
                         <div className="toggleTheme toggleThemeIcon"></div>
                     </label>
                 </div>
@@ -66,7 +73,11 @@ const LightSwitch = () => {
                 }
 
                 .st0 {
-                    fill:#0C4027;
+                    fill: var(--text-color);
+                }
+
+                .st0:hover {
+                    fill: var(--text-color-hover);
                 }
 
                 .toggleTheme {
@@ -132,7 +143,7 @@ const LightSwitch = () => {
                 }
 
                 .toggle-theme {
-                    color: #0C4027;
+                    color: #39524f;
                     display: block;
                     margin: 2px 12px 0;
                     flex-direction: row;
@@ -143,11 +154,19 @@ const LightSwitch = () => {
                 }
 
                 .toggleTheme {
-                    border-color: #0C4027;
+                    border-color: #39524f;
+                }
+
+                .toggleTheme:hover {
+                    border-color: rgb(248, 100, 1);
                 }
 
                 .toggleTheme::before {
-                    background-color: #0C4027;
+                    background-color: #39524f;
+                }
+
+                .toggleTheme:hover::before {
+                    background-color: var(--text-color-hover);
                 }
 
                 .ic {

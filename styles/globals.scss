@@ -1,11 +1,11 @@
 :root {
-    --background: #fdefe7;
+    --background: #e7e7e1;
     --white: #FFFFFF;
     --background-dark: #000000;
     --text-color: #0d4027;
-    --text-color-hover: rgba(248, 100, 1);
+    --text-color-hover: rgb(248, 100, 1);
     --text-color-dark: #FFFFFF;
-    --theme-color: #dd5c4c;
+    --theme-color: rgb(248, 100, 1);
     --baseline: 1.5;
     --xxs: 0.125;
     --xs: 0.5;
@@ -28,9 +28,9 @@
     --center-column: 2 / 3;
     --grid-spec: minmax(0, 1fr) minmax(auto,var(--container-width)) minmax(0, 1fr);
     --content-grid-spec: minmax(0, 1fr) minmax(auto, var(--content-width));
-    --sub-content-grid-spec: minmax(0, 1fr) minmax(auto, var(--content-width)) minmax(0, 1fr);
-    --font-sans: 'Sombra', sans-serif;
-    --font-serif: 'Sombra', serif;
+    --sub-content-grid-spec: minmax(0, 1fr) minmax(0, 1fr);
+    --font-sans: 'Sombra', serif;
+    --font-serif: 'CanelaText', sans-serif;
     --font-body: var(--font-sans);
     --font-heading: var(--font-serif);
 }
@@ -54,6 +54,9 @@ html {
 main {
     padding-left: var(--sp-xl);
     padding-right: var(--sp-xl);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-image: url(./../public/images/clouds-d40be1e467f402c7bb897652a961d95e9c1c62bde07b0766865d39423e42096d.svg);
 }
 
 a {
@@ -67,6 +70,29 @@ a {
 
 h1, h2, h3 {
     margin-top: 0;
-    font-family: var(--font-heading);
+    font-family: var(--font-serif);
     font-weight: 100;
+}
+
+h1 {
+    font-size: 44px;
+    font-weight: 700;
+    margin: 0;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 0.95;
+    font-weight: 500;
+}
+
+h2 em {
+    font-weight: 100;
+}
+
+p {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 21px;
 }
