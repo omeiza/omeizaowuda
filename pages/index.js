@@ -4,7 +4,7 @@ import Header from "./../src/components/Header";
 import Footer from "./../src/components/Footer"
 import Grid from "./../styles/Grid.module.scss";
 import List from "./../styles/List.module.scss";
-import Photo from "./../public/images/face.jpeg";
+import Photo from "./../public/images/profile-img.jpg";
 
 export default function Home() {
     return (
@@ -20,7 +20,7 @@ export default function Home() {
                     <section id="about-section" className={`about-section ${Grid.wrapper}`}>
                         <div className={`${Grid.centered}`}>
                             <div className="profile-img">
-                                <Image className="profile-img" src={Photo} />
+                                <Image className="profile-img" src={Photo} alt="Picture of Omeiza Owuda" layout="responsive" />
                             </div>
                             <div>
                                 <p>Daniel Eden is a Design Manager at Facebook in London, supporting Facebook’s Commerce organisation. He spends his time writing, thinking, tweeting, and talking about Design Systems: how they scale, how they break, and the people that maintain them.</p>
@@ -61,6 +61,12 @@ export default function Home() {
 
                 .writing-section {
                     padding: var(--sp-xl) 0;
+                }
+
+                .profile-img {
+                    margin: var(--sp-xl) auto;
+                    width: 100%;
+                    max-width: 400px;
                 }
             `}</style>
         </>

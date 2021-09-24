@@ -4,7 +4,7 @@ import Header from "./../../src/components/Header";
 import Footer from "./../../src/components/Footer"
 import Grid from "./../../styles/Grid.module.scss";
 import Experience from '../../src/components/Experience';
-import Photo from "./../../public/images/face.jpeg";
+import Photo from "./../../public/images/profile-img.jpg";
 
 export default function About() {
     return (
@@ -22,7 +22,7 @@ export default function About() {
                             <h1>About</h1>
                             <p>Daniel Eden is a Design Manager at Facebook in London, supporting Facebook’s Commerce organisation. He spends his time writing, thinking, tweeting, and talking about Design Systems: how they scale, how they break, and the people that maintain them.</p>
                             <div className="profile-img">
-                                <Image className="profile-img" src={Photo} />
+                                <Image className="profile-img" src={Photo} alt="Picture of Omeiza Owuda" layout="responsive" />
                             </div>
                             <p>When I was a kid, I loved Lego Mindstorms. The model pictured is a lot more sophisticated than what I had as a child, but the concept is the same. The key piece here is the gray brick in the middle; it’s effectively a computer with a motor inside it, which you could plug into a PC and, using something similar to Scratch, you could program it to do different things. By assembling blocks of instructions, you could have it run the motor, which in turn, you might have attached a set of wheels to, and before you know it, you’ve built a robot that can drive around on a tabletop.</p>
                             <p>Daniel Eden is a Design Manager at Facebook in London, supporting Facebook’s Commerce organisation. He spends his time writing, thinking, tweeting, and talking about Design Systems: how they scale, how they break, and the people that maintain them.</p>
@@ -43,7 +43,9 @@ export default function About() {
                 }
 
                 .profile-img {
-                    margin: var(--sp-xl) 0;
+                    margin: var(--sp-xl) auto;
+                    width: 100%;
+                    max-width: 400px;
                 }
             `}</style>
         </>
