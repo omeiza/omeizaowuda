@@ -20,3 +20,9 @@
 .centered {
     grid-column: var(--center-column);
 }
+
+@media(max-width: 50em) {
+    .wrapper {
+        grid-gap: 0;
+    }
+}

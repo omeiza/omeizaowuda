@@ -176,6 +176,18 @@ const LightSwitch = ({theme,  toggleTheme }) => {
                 .ic.dark-mode, .ic.light-mode {
                     margin-top: -2px;
                 }
+
+                @media(max-width: 50em) {
+                    .lightswitch {
+                        position: relative;
+                        top: unset;
+                        right: unset;
+                    }
+
+                    .toggle-theme {
+                        margin: 2px 6px 0;
+                    }
+                }
             `}</style>
         </>
     )

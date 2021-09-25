@@ -1,5 +1,4 @@
-.articles,
-.experience {
+.articles {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -16,6 +15,10 @@
             font-weight: 400;
             transition: color .2s;
 
+            @media (max-width: 50em) {
+                font-size: 20px;
+            }
+
             &:hover {
                 color: var(--text-color-hover);
             }
@@ -27,6 +30,10 @@
             font-weight: 700;
             font-size: 14px;
             font-family: var(--font-body);
+
+            @media (max-width: 50em) {
+                font-size: 12px;
+            }
         }
 
         &:first-of-type {

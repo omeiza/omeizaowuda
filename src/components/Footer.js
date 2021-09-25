@@ -18,6 +18,12 @@ const Footer = () => {
                     line-height: 1.35;
                 }
 
+                @media (max-width: 50em) {
+                    footer {
+                        font-size: 14px;
+                    }
+                }
+
                 .footer-info p {
                     margin: 0;
                 }

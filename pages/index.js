@@ -41,7 +41,6 @@ export default function Home() {
             <style jsx>{`
                 .about-section {
                     padding: var(--sp-xl) 0 0;
-                    
                 }
 
                 .about-section > div {
@@ -64,6 +63,16 @@ export default function Home() {
                     font-size: 13px;
                     font-family: var(--font-sans);
                     line-height: 1.25;
+                }
+
+                @media (max-width: 50em) {
+                    .about-section {
+                        padding: 0;
+                    }
+
+                    .profile-img .img-caption {
+                        font-size: 12px;
+                    }
                 }
             `}</style>
         </>

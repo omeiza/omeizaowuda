@@ -26,7 +26,6 @@ const Header = ({theme,  toggleTheme}) => {
                     position: fixed;
                     left: var(--sp-xl);
                     top: var(--sp-xl);
-                    
                 }
 
                 .header-text h1 {
@@ -67,6 +66,31 @@ const Header = ({theme,  toggleTheme}) => {
                         -webkit-transform: rotate(360deg); 
                         transform:rotate(360deg); 
                     } 
+                }
+
+                @media(max-width: 50em) {
+                    header {
+                        padding: var(--sp-l) 0;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    .header-text {
+                        position: relative;
+                        left: unset;
+                        top: unset;
+                    }
+
+                    .header-text h1 {
+                        font-size: 25px;
+                        margin: 0;
+                    }
+
+                    .svg-star {
+                        top: 2px;
+                        width: 12px;
+                        right: -13px;
+                    }
                 }
             `}</style>
         </>
