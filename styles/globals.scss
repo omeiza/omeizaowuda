@@ -1,8 +1,8 @@
 :root {
-    --background: #e7e7e1;
+    --background: #f6f5f1;
     --white: #FFFFFF;
     --background-dark: #000000;
-    --text-color: #0d4027;
+    --text-color: #4b418a;
     --text-color-hover: rgb(248, 100, 1);
     --text-color-dark: #FFFFFF;
     --theme-color: rgb(248, 100, 1);
@@ -42,21 +42,31 @@ body {
 }
 
 html {
-    background-color: var(--background);
-    color: var(--text-color);
     font-size: clamp(100%, 2.4vw, 140%);
     font-weight: 100;
     font-family: var(--font-body);
     line-height: var(--baseline);
     -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeSpeed;
+    font-feature-settings: 'pnum' on, 'lnum' on, 'ss08' on;
 }
 
 main {
+    background-color: var(--background);
+    color: var(--text-color);
     padding-left: var(--sp-xl);
     padding-right: var(--sp-xl);
+}
+
+main.light {
     background-repeat: repeat;
     background-attachment: fixed;
     background-image: url(./../public/images/clouds-d40be1e467f402c7bb897652a961d95e9c1c62bde07b0766865d39423e42096d.svg);
+} 
+
+main.dark {
+    --background: #4b418a;
+    --text-color: #f6f5f1;
 }
 
 a {

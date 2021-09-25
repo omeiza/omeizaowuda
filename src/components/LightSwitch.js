@@ -1,8 +1,7 @@
-import React from "react";
+import React from 'react';
+import { func, string } from 'prop-types';
 
-const LightSwitch = () => {
-    const [checked, setChecked] = React.useState(true);
-
+const LightSwitch = ({theme,  toggleTheme }) => {
     return (
         <>
             <div className="lightswitch">
@@ -38,8 +37,8 @@ const LightSwitch = () => {
                             id="toggleTheme" 
                             name="theme" 
                             type="checkbox"
-                            defaultChecked={checked}
-                            onChange={() => setChecked(!checked)}
+                            checked={theme === 'dark' ? true : false}
+                            onChange={toggleTheme}
                         />
                         <div className="toggleTheme toggleThemeIcon"></div>
                     </label>
@@ -143,7 +142,7 @@ const LightSwitch = () => {
                 }
 
                 .toggle-theme {
-                    color: #39524f;
+                    color: var(--text-color);
                     display: block;
                     margin: 2px 12px 0;
                     flex-direction: row;
@@ -154,7 +153,7 @@ const LightSwitch = () => {
                 }
 
                 .toggleTheme {
-                    border-color: #39524f;
+                    border-color: var(--text-color);
                 }
 
                 .toggleTheme:hover {
@@ -162,7 +161,7 @@ const LightSwitch = () => {
                 }
 
                 .toggleTheme::before {
-                    background-color: #39524f;
+                    background-color: var(--text-color);
                 }
 
                 .toggleTheme:hover::before {
@@ -180,6 +179,11 @@ const LightSwitch = () => {
             `}</style>
         </>
     )
+}
+
+LightSwitch.propTypes = {
+    theme: string.isRequired,
+    toggleTheme: func.isRequired,
 }
 
 export default LightSwitch;
