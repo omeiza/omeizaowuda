@@ -17,7 +17,7 @@ const Experience = () => {
                         <li>
                             <h4>Software Developer</h4>
                             <span>NOTJUSTOK INC</span>
-                            <p>My role was to help the company sustain the development of its streaming platform called <Link href="https://minomusic.co"><a target="_blank">Mino Music</a></Link>. Mino Music is an African music streaming platform owned by <Link href="https://notjustok.com"><a target="_blank">Notjustok</a></Link>. I also did a lot of development work on the publication site.</p>
+                            <p>My role was to help the company sustain the development of its streaming platform called <Link href="https://minomusic.co"><a target="_blank">Mino Music</a></Link>. Mino Music is an African music streaming platform owned by Notjustok. I also did a lot of development work on <Link href="https://notjustok.com"><a target="_blank">Notjustok</a></Link>.</p>
                             <span>FEB 2018 - NOW</span>
                         </li>
                         <li>
@@ -45,6 +45,7 @@ const Experience = () => {
                 }
 
                 h2 {
+                    margin-top: 0;
                     color: #2d2e31;
                 }
 

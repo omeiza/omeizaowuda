@@ -88,7 +88,7 @@ main {
 }
 
 h1, h2, h3 {
-    margin: 0 0 var(--sp-l);
+    margin: var(--sp-l) 0 var(--sp-m);
     font-family: var(--font-serif);
     font-weight: 500;
     color: var(--heading-color);

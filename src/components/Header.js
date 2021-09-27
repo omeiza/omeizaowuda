@@ -48,7 +48,7 @@ const Header = ({theme,  toggleTheme}) => {
                 }
 
                 h1 svg {
-                    width: var(--sp-xxxxl);
+                    width: var(--sp-xxxl);
                     display: block;
                 }
 

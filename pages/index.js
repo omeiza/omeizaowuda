@@ -1,14 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Grid from "./../styles/Grid.module.scss";
-import List from "./../styles/List.module.scss";
 import Photo from "./../public/images/profile-img.jpg";
 import Layout from '../src/components/Layout';
 
 export default function Home() {
     return (
         <>
-            <Layout>
+            <Layout image="/images/profile-img.jpg" title="Omeiza Owuda, Software Developer" description="Personal site, blog, and portfolio of Omeiza Owuda, a Software Developer focused on making complex user interfaces appear simple to the users">
                 <section id="about-section" className={`about-section ${Grid.wrapper}`}>
                     <div className={`${Grid.centered}`}>
                         <div className="profile-img">
@@ -16,7 +15,7 @@ export default function Home() {
                             <p className="img-caption">Credit: Image edited by <Link href="https://www.linkedin.com/in/victor-enesi/" target="_blank">Victor Owuda</Link></p>
                         </div>
                         <div>
-                            <p>Daniel Eden is a Design Manager at Facebook in London, supporting Facebook’s Commerce organisation. He spends his time writing, thinking, tweeting, and talking about Design Systems: how they scale, how they break, and the people that maintain them.</p>
+                            <p>Omeiza is a Software Developer based in Lagos, Nigeria. He allowed his curiosity to drive him into working on both the Front-end and Back-end of the web, which has resulted in 6 years of experience working for and with companies to help build web products.</p>
                             <p className="button">
                                 <Link href="/about"><a>Read more about me <span className="link-emoji">↓</span></a></Link>
                             </p>
