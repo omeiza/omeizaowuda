@@ -49,13 +49,12 @@ const Experience = () => {
                 }
 
                 .work-experience {
-                    padding: var(--sp-l) 0;
                     margin: var(--sp-l) 0;
                     border-top: 1px solid var(--text-color);
                     border-bottom: 1px solid var(--text-color);
                     background-color: #f5c76a;
                     color: #2d2e31;
-                    padding: var(--sp-l);
+                    padding: var(--sp-xl) var(--sp-l);
                 }
 
                 li {
