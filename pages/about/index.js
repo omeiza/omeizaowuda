@@ -15,7 +15,7 @@ export default function About() {
                         <p>Omeiza is a Software Developer based in Lagos, Nigeria who allowed his curiosity to drive him into working on both the Front-end and Back-end of the web, which has resulted in 6 years of experience working for and with companies to help build web products.</p>
                         <p>He loves coding, design, and tinkering around finding simple solutions to complex problems which he intends to share on this site as well as document his career and interests.</p>
                         <div className="profile-img">
-                            <Image className="profile-img" src={Photo} alt="Picture of Omeiza Owuda" layout="responsive" />
+                        <Image className="profile-img" src={Photo} alt="Picture of Omeiza Owuda" layout="responsive" />
                             <p className="img-caption">Credit: Image edited by <Link href="https://www.linkedin.com/in/victor-enesi/" target="_blank">Victor Owuda</Link></p>
                         </div>
                         <h2>How it all started</h2>
