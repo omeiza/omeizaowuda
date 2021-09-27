@@ -1,11 +1,12 @@
 :root {
-    --background: #f6f5f1;
+    --background: #fff9ef;
     --white: #FFFFFF;
     --background-dark: #000000;
-    --text-color: #4b418a;
-    --text-color-hover: rgb(248, 100, 1);
+    --text-color: #3d3d3d;
+    --heading-color: #f95d36;
+    --text-color-hover: #f95d36;
     --text-color-dark: #FFFFFF;
-    --theme-color: rgb(248, 100, 1);
+    --theme-color: #f95d36;
     --baseline: 1.5;
     --xxs: 0.125;
     --xs: 0.5;
@@ -62,18 +63,14 @@ main {
     &.light {
         background-repeat: repeat;
         background-attachment: fixed;
-        background-image: url(./../public/images/clouds-d40be1e467f402c7bb897652a961d95e9c1c62bde07b0766865d39423e42096d.svg);
+        // background-image: url(./../public/images/clouds-d40be1e467f402c7bb897652a961d95e9c1c62bde07b0766865d39423e42096d.svg);
     }
 
     &.dark {
-        --background: #4b418a;
-        --text-color: #f6f5f1;
+        --background: #222222;
+        --text-color: #d2d2d2;
+        // --heading-color: #ffeac5;
     }
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
 }
 
 * {
@@ -83,7 +80,8 @@ a {
 h1, h2, h3 {
     margin: 0 0 var(--sp-l);
     font-family: var(--font-serif);
-    font-weight: 100;
+    font-weight: 500;
+    color: var(--heading-color);
 }
 
 h1 {
@@ -107,6 +105,17 @@ p {
     font-weight: 400;
     line-height: 1.4;
     font-size: 21px;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color .2s;
+}
+
+a:hover {
+    color: var(--text-color-hover);
 }
 
 @media (max-width: 50em) {

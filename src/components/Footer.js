@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Grid from "./../../styles/Grid.module.scss";
 
 const Footer = () => {
@@ -5,7 +6,7 @@ const Footer = () => {
         <>
             <footer id="footer" className={`${Grid.wrapper}`}>
                 <div className={`footer-info ${Grid.centered}`}>
-                    Written, designed, and built by Omeiza Owuda, a Software Developer who you can find on <a href="">Twitter</a>, <a href="">GitHub</a>, or good old-fashioned <a href="">Email</a>.
+                    Written, designed, and built by Omeiza Owuda, a Software Developer who you can find on <Link href="https://twitter.com/Mr_Omeiza">Twitter</Link>, <Link href="https://github.com/omeiza">GitHub</Link>, or good old-fashioned <Link href="mailto:owudaomeiza@gmail.com">Email</Link>.
                 </div>
             </footer>
             <style jsx>{`
@@ -26,16 +27,6 @@ const Footer = () => {
 
                 .footer-info p {
                     margin: 0;
-                }
-
-                footer a {
-                    text-decoration: underline;
-                    font-weight: 500;
-                    transition: color .2s;
-                }
-
-                footer a:hover {
-                    color: var(--text-color-hover);
                 }
             `}</style>
         </>

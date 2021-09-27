@@ -1,18 +1,22 @@
 .articles {
     list-style: none;
-    margin: 0;
+    margin: var(--sp-l) 0 0;
     padding: 0;
     
     li {
         font-family: var(--font-sans);
-        padding: var(--sp-s) 0;
+        padding: var(--sp-l) 0;
         line-height: 1.2;
         border-bottom: 1px dashed rgba(#ccc, 0.7);
+        font-size: 26px;
+        font-weight: 400;
+
+        p a {
+            text-decoration: underline;
+        }
 
         a {
             text-decoration: none;
-            font-size: 26px;
-            font-weight: 400;
             transition: color .2s;
 
             @media (max-width: 50em) {

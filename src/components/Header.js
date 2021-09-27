@@ -26,6 +26,11 @@ const Header = ({theme,  toggleTheme}) => {
                     position: fixed;
                     left: var(--sp-xl);
                     top: var(--sp-xl);
+                    text-decoration: none;
+                }
+
+                .header-text:hover {
+                    color: var(--text-color);
                 }
 
                 .header-text h1 {
@@ -50,7 +55,7 @@ const Header = ({theme,  toggleTheme}) => {
 
                 .svg-star path {
                     transform-origin: 0px 0px;
-                    fill: var(--text-color);
+                    fill: var(--text-color-hover);
                 }
 
                 @-moz-keyframes spin { 
