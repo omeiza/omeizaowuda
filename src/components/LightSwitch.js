@@ -72,7 +72,7 @@ const LightSwitch = ({theme,  toggleTheme }) => {
                 }
 
                 .st0 {
-                    fill: var(--text-color-hover);
+                    fill: var(--text-color);
                 }
 
                 .st0:hover {
@@ -142,7 +142,7 @@ const LightSwitch = ({theme,  toggleTheme }) => {
                 }
 
                 .toggle-theme {
-                    color: var(--text-color-hover);
+                    color: var(--text-color);
                     display: block;
                     margin: 2px 12px 0;
                     flex-direction: row;
@@ -153,7 +153,7 @@ const LightSwitch = ({theme,  toggleTheme }) => {
                 }
 
                 .toggleTheme {
-                    border-color: var(--text-color-hover);
+                    border-color: var(--text-color);
                 }
 
                 .toggleTheme:hover {
@@ -161,7 +161,7 @@ const LightSwitch = ({theme,  toggleTheme }) => {
                 }
 
                 .toggleTheme::before {
-                    background-color: var(--text-color-hover);
+                    background-color: var(--text-color);
                 }
 
                 .toggleTheme:hover::before {

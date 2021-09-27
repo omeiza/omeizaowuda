@@ -51,7 +51,7 @@ export default function Home() {
             </Layout>
             <style jsx>{`
                 .about-section {
-                    padding: var(--sp-xl) 0 0;
+                    padding: var(--sp-xxxl) 0 0;
                 }
 
                 .about-section > div {

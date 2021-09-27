@@ -1,36 +1,56 @@
 @font-face {
-    font-family: "CanelaText";
-    src: url("./CanelaText-Light.woff2") format("woff2"),
-        url("./CanelaText-Light.woff") format("woff");
-    font-weight: 100;
+    font-family: 'Telegraf';
+    src: url('./Telegraf-Black.woff2') format('woff2');
+    font-weight: 900;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "CanelaText";
-    src: url("./CanelaText-Regular.woff2") format("woff2"),
-        url("./CanelaText-Regular.woff") format("woff");
-    font-weight: 400;
+    font-family: 'Telegraf';
+    src: url('./Telegraf-SemiBold.woff2') format('woff2');
+    font-weight: 800;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "CanelaText";
-    src: url("./CanelaText-Medium.woff2") format("woff2"),
-        url("./CanelaText-Medium.woff") format("woff");
+    font-family: 'Telegraf';
+    src: url('./Telegraf-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Telegraf';
+    src: url('./Telegraf-Medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "CanelaText";
-    src: url("./CanelaText-LightItalic.woff2") format("woff2"),
-        url("./CanelaText-LightItalic.woff") format("woff");
+    font-family: 'Telegraf';
+    src: url('./Telegraf-Regular.woff2') format('woff2');
     font-weight: 400;
-    font-style: italic;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Telegraf';
+    src: url('./Telegraf-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Telegraf';
+    src: url('./Telegraf-UltraLight.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
     font-display: swap;
 }
 

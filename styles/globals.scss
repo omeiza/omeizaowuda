@@ -1,12 +1,12 @@
 :root {
-    --background: #fff9ef;
+    --background: #e8e5dd;
     --white: #FFFFFF;
     --background-dark: #000000;
-    --text-color: #3d3d3d;
-    --heading-color: #f95d36;
-    --text-color-hover: #f95d36;
+    --text-color: #202020;
+    --heading-color: #202020;
+    --text-color-hover: #e84a4a;
     --text-color-dark: #FFFFFF;
-    --theme-color: #f95d36;
+    --theme-color: #e84a4a;
     --baseline: 1.5;
     --xxs: 0.125;
     --xs: 0.5;
@@ -16,6 +16,7 @@
     --xl: 2.25;
     --xxl: 3;
     --xxxl: 6;
+    --xxxxl: 7;
     --sp-xxs: calc(var(--xxs) * 1rem);
     --sp-xs: calc(var(--xs) * 1rem);
     --sp-s: calc(var(--s) * 1rem);
@@ -24,6 +25,7 @@
     --sp-xl: calc(var(--xl) * 1rem);
     --sp-xxl: calc(var(--xxl) * 1rem);
     --sp-xxxl: calc(var(--xxxl) * 1rem);
+    --sp-xxxxl: calc(var(--xxxxl) * 1rem);
     --container-width: 26rem;
     --content-width: 36rem;
     --center-column: 2 / 3;
@@ -31,7 +33,7 @@
     --content-grid-spec: minmax(0, 1fr) minmax(auto, var(--content-width));
     --sub-content-grid-spec: minmax(0, 1fr) minmax(0, 1fr);
     --font-sans: 'Sombra', serif;
-    --font-serif: 'CanelaText', sans-serif;
+    --font-serif: 'Telegraf', sans-serif;
     --font-body: var(--font-sans);
     --font-heading: var(--font-serif);
 }
@@ -63,13 +65,21 @@ main {
     &.light {
         background-repeat: repeat;
         background-attachment: fixed;
+
+        .header-text .omz-svg {
+            fill: var(--heading-color);
+        }
         // background-image: url(./../public/images/clouds-d40be1e467f402c7bb897652a961d95e9c1c62bde07b0766865d39423e42096d.svg);
     }
 
     &.dark {
-        --background: #222222;
-        --text-color: #d2d2d2;
-        // --heading-color: #ffeac5;
+        --background: #232323;
+        --text-color: #eae6e1;
+        --heading-color: #e8e5dd;
+
+        .header-text .omz-svg {
+            fill: var(--text-color);
+        }
     }
 }
 
@@ -93,7 +103,7 @@ h1 {
 h2 {
     font-size: 32px;
     line-height: 0.95;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 h2 em {
@@ -104,7 +114,7 @@ p {
     font-family: var(--font-sans);
     font-weight: 400;
     line-height: 1.4;
-    font-size: 21px;
+    font-size: 20px;
 }
 
 a {
