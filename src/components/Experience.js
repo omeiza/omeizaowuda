@@ -64,7 +64,7 @@ const Experience = () => {
 
                 .button a {
                     background-color: #232323;
-                    color: var(--text-color);
+                    color: #e8e5dd;
                 }
             `}</style>
         </>
