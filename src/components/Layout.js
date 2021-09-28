@@ -11,21 +11,18 @@ const Layout = ({ children, image, title, description }) => {
         <>
             <Head>
                 <title>{title}</title>
-                <meta property="og:title" content={title} key="title" />
                 <meta name="description" content={description} />
-                <meta content={title} name="title" />
+                <meta name="title" content={title} />
                 <link href="/images/favicon.svg" rel="icon" type="image/svg+xml" />
-                <meta name="twitter:title" content={title}/>
-                <meta name="twitter:description" content={description} />
+                <meta property="og:locale" content="en" />
+                <meta property="og:title" content={title} key="title" />
                 <meta name="og:description" content={description} />
-                <meta content={image} property="og:image" />
-                <meta content={image} property="og:image:secure_url" />
-                <meta content={image} property="twitter:image" />
-                <meta content="1200" property="og:image:width" />
-                <meta content="630" property="og:image:height" />
+                <meta property="og:type" content="website" />
+                <meta property="og:image" content={image} />
+                <meta property="og:site_name" content="Omeiza Owuda, Software Developer" />
                 <meta name="twitter:card" content="summary" />
-                <meta name="twitter:creator" content="@Mr_Omeiza" />
-                <meta content="en" property="og:locale" />
+                <meta name="twitter:site" content="@Mr_Omeiza" />
+                <meta name="twitter:image" content={image} />
             </Head>
             <main className={theme}>
                 <Header theme={theme} toggleTheme={themeToggler} />

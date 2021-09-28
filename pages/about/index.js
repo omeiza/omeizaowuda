@@ -26,7 +26,7 @@ export default function About() {
                         <p>He currently works at Big Cabal Media as a Software Developer to help the company build new web products, and maintain the current publishing platforms & products.</p>
                         <Experience />
                         <h2>Interests</h2>
-                        <p>Omeiza&apos;s desire is to focus on building complex UI with code and make it easier for users to use. He is an advocate of using minimalism and simplicity to solve user&apos;s needs. In other to achieve this, he is currently learning more about UI development and Front-end Engineering as a whole.</p>
+                        <p>Omeiza&apos;s desire is to focus on building complex UIs with code and make it easier for users to use. He is an advocate of using minimalism and simplicity to solve user&apos;s needs. In other to achieve this, he is currently learning more about UI development and Front-end Engineering as a whole.</p>
                         <p>Outside of work, he likes spending time with his loved ones and listening to podcasts about startup growth & Africa&apos;s startup ecosystem.</p>
                     </div>
                 </section>

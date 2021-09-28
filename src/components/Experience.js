@@ -61,6 +61,11 @@ const Experience = () => {
                 li {
                     border-bottom: 1px dashed rgb(185, 125, 0);
                 }
+
+                .button a {
+                    background-color: #232323;
+                    color: var(--text-color);
+                }
             `}</style>
         </>
     )

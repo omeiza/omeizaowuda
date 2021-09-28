@@ -6,7 +6,7 @@ const Footer = () => {
         <>
             <footer id="footer" className={`${Grid.wrapper}`}>
                 <div className={`footer-info ${Grid.centered}`}>
-                    Written, designed, and built by Omeiza Owuda, a Software Developer who you can find on <Link href="https://twitter.com/Mr_Omeiza">Twitter</Link>, <Link href="https://github.com/omeiza">GitHub</Link>, or good old-fashioned <Link href="mailto:owudaomeiza@gmail.com">Email</Link>.
+                    Written, designed, and built by Omeiza Owuda, a Software Developer who you can find on <Link href="https://twitter.com/Mr_Omeiza"><a target="_blank">Twitter</a></Link>, <Link href="https://github.com/omeiza"><a target="_blank">GitHub</a></Link>, or good old-fashioned <Link href="mailto:owudaomeiza@gmail.com"><a target="_blank">Email</a></Link>.
                 </div>
             </footer>
             <style jsx>{`

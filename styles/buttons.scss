@@ -5,7 +5,7 @@
     text-transform: capitalize;
 
     a {
-        background-color: var(--background);
+        background-color: transparent;
         text-decoration: none;
         display: inline-block;
         transition: background-color .2s;
@@ -14,14 +14,11 @@
         border-radius: 5px;
         font-weight: 700;
         font-size: 16px;
-        color: var(--text-color);
-        position: relative;
-        z-index: 2;
 
         &:hover {
             color: var(--background);
             border-color: var(--text-color);
-            background-color: var(--theme-color);
+            background-color: var(--text-color);
         }
 
         // &:after {
