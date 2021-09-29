@@ -34,7 +34,7 @@ const Experience = () => {
                         </li>
                     </ul>
                     <p className="button">
-                        <Link href=""><a target="_blank">Resume <span className="link-emoji-download">↓</span></a></Link>
+                        <Link href="/uploads/resume-omeiza.pdf"><a target="_blank">Resume <span className="link-emoji-download">↓</span></a></Link>
                     </p>
                 </div>
             </div>
