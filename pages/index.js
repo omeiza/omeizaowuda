@@ -15,7 +15,7 @@ export default function Home() {
                             <p className="img-caption">Credit: Image edited by <Link href="https://www.linkedin.com/in/victor-enesi/" target="_blank">Victor Owuda</Link></p>
                         </div>
                         <div>
-                            <p>Omeiza is a Software Developer based in Lagos, Nigeria. He allowed his curiosity to drive him into working on both the Front-end and Back-end of the web, which has resulted in 6 years of experience working for and with companies to help build web products.</p>
+                            <p>Omeiza is a Software Developer at Big Cabal Media in Lagos, Nigeria. He has 6+ years of experience in building a better web experience on both the front-end and back-end of the web for african users. He spends his time writing, thinking and learning more  about User Interface Development.</p>
                             <p className="button">
                                 <Link href="/about"><a>Read more about me <span className="link-emoji">↓</span></a></Link>
                             </p>
