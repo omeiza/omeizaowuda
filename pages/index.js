@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import Grid from "./../styles/Grid.module.scss";
@@ -7,6 +8,14 @@ import Layout from '../src/components/Layout';
 export default function Home() {
     return (
         <>
+            <Head>
+                <title>Omeiza Owuda, Software Developer</title>
+                <meta name="title" content="Omeiza Owuda, Software Developer" />
+                <meta property="og:title" content="Omeiza Owuda, Software Developer" key="title" />
+                <meta name="description" content="Personal website &amp; blog of Omeiza Owuda, Software Developer" />
+                <meta name="og:description" content="Personal website &amp; blog of Omeiza Owuda, Software Developer" />
+                <meta property="og:image" content="/images/profile-img.jpg" />
+            </Head>
             <Layout image="/images/profile-img.jpg" title="Omeiza Owuda, Software Developer" description="Personal site, blog, and portfolio of Omeiza Owuda, a Software Developer focused on making complex user interfaces appear simple to the users">
                 <section id="about-section" className={`about-section ${Grid.wrapper}`}>
                     <div className={`${Grid.centered}`}>
