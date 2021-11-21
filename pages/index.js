@@ -15,38 +15,29 @@ export default function Home() {
                             <p className="img-caption">Credit: Image edited by <Link href="https://www.linkedin.com/in/victor-enesi/" target="_blank">Victor Owuda</Link></p>
                         </div>
                         <div>
-                            <p>Omeiza is a Software Developer at Big Cabal Media in Lagos, Nigeria. He has 6+ years of experience in building a better web experience on both the front-end and back-end of the web for african users. He spends his time writing, thinking and learning more  about User Interface Development.</p>
+                            <p>Hi, my name is Omeiza Owuda. I am a passionate Software Developer who likes to build stuffs that live on the internet. I am proudly from Nigeria and currently live in a big city called Ibadan in Oyo State.</p>
+                            <p>This little personal site is a place where I write about:</p>
+                            <ol>
+                                <li>Things in my personal life I wish to share.</li>
+                                <li>Interesting things about my work that could benefit others.</li>
+                                <li>Tutorials about software development.</li>
+                                <li>Startups and innovation across Africa.</li>
+                            </ol>
+                            <hr></hr>
+                            <h2>Work</h2>
+                            <p>I work as a Full-stack software developer with 7 years under my belt building web platforms and softwares across different industries. My favourite stack is <strong>PHP</strong> + <strong>Node</strong> + <strong>JS</strong> (<strong>Vanilla</strong> &amp; <strong>React</strong>) + <strong>SASS</strong> + <strong>SQL</strong>.</p>
+                            <p>I am very big on design thinkiyarn ng with focus on component based UI development and I tend to demonstrate this by crafting out web products that make use of this, some of which I will often share here.</p>
+                            <p>At this stage of my career, I am looking for excitement, fulfilment and opportunities that will get me thinking, researching and breaking boundaries.</p>
                             <p className="button">
-                                <Link href="/about"><a>Read more about me <span className="link-emoji">↓</span></a></Link>
+                                <Link href="https://www.linkedin.com/in/omeiza-owuda/"><a target="_blank">More about work <span className="link-emoji">↓</span></a></Link>
                             </p>
+                            <hr></hr>
+                            <h2>Writing</h2>
+                            <p>I do not derive a lot of fun when writing, but I want to. I feel writing is the most honest form of expression and communication of ideas. My first real write-up happened when I was in primary school - which is often referred to as middle school. The piece was about my family composition and I felt very happy writing it, but I can&apos;t seem to understand where and when I lost that zeal and passion. This personal site has a blog section which will also serve as an opportunity for me to share my thoughts in written form and improve my writing.</p>
+                            <p>I am a very transparent person and I was lucky enough to know a lot of people whose transparency and willingness to share has helped me to learn more about life, career and many other things that has contributed to shaping me.</p>
                         </div>
                     </div>
                 </section>
-                {/* <section id="writing-section" className={`writing-section ${Grid.wrapper}`}>
-                    <div className={`${Grid.centered}`}>
-                        <h2>Work Experience</h2>
-                        <div>
-                            <ul className={List.articles}>
-                                <li>
-                                    Software Developer
-                                    <span>BIG CABAL MEDIA</span>
-                                    <p>I interface with all the departments and my role is to build new products for the company, maintain the two publications (Zikoko & TechCabal) and help drive the company forward by providing technical growth support & innovative ideas.</p>
-                                    <span>SEPT 2020 - NOW</span>
-                                </li>
-                                <li>Software Developer
-                                    <span>NOTJUSTOK INC</span>
-                                    <p>My role was to help the company sustain the development of its streaming platform called <Link href="https://minomusic.co" target="_blank">Mino Music</Link>. Mino Music is an African music streaming platform owned by Notjustok. I also did a lot of development work on the publication site - https://notjustok.com.</p>
-                                    <span>FEB 2018 - NOW</span>
-                                </li>
-                                <li>Full-stack Developer<span>VENTRA MEDIA GROUP</span></li>
-                                <li>Front-end Developer<span>CKDIGITAL</span></li>
-                            </ul>
-                            <p className="button">
-                                <a href="">Resume <span className="link-emoji">↓</span></a>
-                            </p>
-                        </div>
-                    </div>
-                </section> */}
             </Layout>
             <style jsx>{`
                 .about-section {
@@ -55,7 +46,6 @@ export default function Home() {
 
                 .about-section > div {
                     padding-bottom: var(--sp-xxl);
-                    // border-bottom: 1px solid var(--text-color);
                 }
 
                 .writing-section {
