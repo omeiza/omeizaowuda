@@ -14,7 +14,7 @@ export default function Home() {
                 <meta property="og:title" content="Omeiza Owuda, Software Developer" key="title" />
                 <meta name="description" content="Personal website &amp; blog of Omeiza Owuda, Software Developer" />
                 <meta name="og:description" content="Personal website &amp; blog of Omeiza Owuda, Software Developer" />
-                <meta property="og:image" content="/images/profile-img.jpg" />
+                <meta property="og:image" content="https://owudaomeiza.com/images/profile-img.jpg" />
             </Head>
             <Layout image="/images/profile-img.jpg" title="Omeiza Owuda, Software Developer" description="Personal site, blog, and portfolio of Omeiza Owuda, a Software Developer focused on making complex user interfaces appear simple to the users">
                 <section id="about-section" className={`about-section ${Grid.wrapper}`}>
@@ -35,7 +35,7 @@ export default function Home() {
                             <hr></hr>
                             <h2>Work</h2>
                             <p>I work as a Full-stack software developer with 7 years under my belt building web platforms and softwares across different industries. My favourite stack is <strong>PHP</strong> + <strong>Node</strong> + <strong>JS</strong> (<strong>Vanilla</strong> &amp; <strong>React</strong>) + <strong>SASS</strong> + <strong>SQL</strong>.</p>
-                            <p>I am very big on design thinkiyarn ng with focus on component based UI development and I tend to demonstrate this by crafting out web products that make use of this, some of which I will often share here.</p>
+                            <p>I am very big on design thinking with focus on component based UI development and I tend to demonstrate this by crafting out web products that make use of this, some of which I will often share here.</p>
                             <p>At this stage of my career, I am looking for excitement, fulfilment and opportunities that will get me thinking, researching and breaking boundaries.</p>
                             <p className="button">
                                 <Link href="https://www.linkedin.com/in/omeiza-owuda/"><a target="_blank">More about work <span className="link-emoji">↓</span></a></Link>
