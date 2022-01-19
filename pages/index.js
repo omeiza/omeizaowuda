@@ -34,7 +34,7 @@ export default function Home() {
                             </ol>
                             <hr></hr>
                             <h2>Work</h2>
-                            <p>I work as a Full-stack software developer with 7 years under my belt building web platforms and softwares across different industries. My favourite stack is <strong>PHP</strong> + <strong>Node</strong> + <strong>JS</strong> (<strong>Vanilla</strong> &amp; <strong>React</strong>) + <strong>SASS</strong> + <strong>SQL</strong>.</p>
+                            <p>I work as a Full-stack software developer with 7 years under my belt building web platforms and softwares across different industries. My favourite stack is <strong>Node</strong> + <strong>Typescript</strong> + <strong>React</strong> + <strong>SASS</strong> + <strong>SQL</strong>.</p>
                             <p>I am very big on design thinking with focus on component based UI development and I tend to demonstrate this by crafting out web products that make use of this, some of which I will often share here.</p>
                             <p>At this stage of my career, I am looking for excitement, fulfilment and opportunities that will get me thinking, researching and breaking boundaries.</p>
                             <p className="button">
