@@ -48,6 +48,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
+  font-size: 0.9em;
   font-family: "Lexend Deca", sans-serif;
   word-wrap: break-word;
   font-kerning: normal;
@@ -188,6 +189,21 @@ header {
   position: relative;
   z-index: -1;
 }
+.jumbotron.transferWindowJumbotron, .jumbotron.multiFund {
+  padding: 6em 0;
+}
+.jumbotron.transferWindowJumbotron h2, .jumbotron.multiFund h2 {
+  margin: 0;
+}
+.jumbotron.transferWindowJumbotron:after, .jumbotron.multiFund:after {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.jumbotron.transferWindowJumbotron {
+  background-image: url("images/keypoint-back.jpg");
+}
+.jumbotron.multiFund {
+  background-image: url("images/multifund-back.jpg");
+}
 .jumbotron:after {
   content: "";
   position: absolute;
@@ -282,6 +298,12 @@ header {
 .keyPoints {
   margin: 8em 0 0;
 }
+.keyPoints.transferWindow {
+  margin: 4em 0 0;
+}
+.keyPoints.transferWindow .keyPointsEach {
+  margin-bottom: 0;
+}
 .keyPointsEach {
   display: grid;
   grid-template-columns: calc(50% - 2em) calc(50% - 2em);
@@ -354,6 +376,9 @@ header {
   background-color: #dd5004;
   border: none;
   margin-top: 20px;
+}
+.auditAccount.transferWindowType {
+  padding: 4em 0;
 }
 .auditAccountWrapper {
   position: relative;
@@ -617,8 +642,8 @@ header {
 
 .footer {
   padding: 4em 0;
-  background-color: #dd5004;
-  color: white;
+  background-color: #434a51;
+  color: #e1e2e3;
 }
 .footerWrapper {
   display: grid;
@@ -632,7 +657,7 @@ header {
 .footer p {
   font-size: 1.1em;
   line-height: 1.4;
-  color: white;
+  color: #e1e2e3;
   margin-bottom: 2em;
 }
 .footerSocial {
