@@ -41,12 +41,13 @@
 		width: 60%;
 		color: white;
 		line-height: 1.5;
-		margin-bottom: 3em;
+		margin-bottom: 2em;
 	}
 
 	.button {
-		border-color: white;
 		color: white;
+		background-color: $theme_color;
+		border: none;
 	}
 }
 
@@ -109,6 +110,12 @@
 				color: $theme_color;
 			}
 		}
+	}
+
+	.button {
+		color: white;
+		background-color: $theme_color;
+		border: none;
 	}
 }
 
@@ -261,7 +268,6 @@
 }
 
 .retireWell, .retireAspiration {
-	padding: 6em 0;
 	background-color: #fff8f5;
 	text-align: center;
 
@@ -318,6 +324,8 @@
 }
 
 .retireWell {
+	padding: 6em 0;
+
 	&Wrapper {
 		width: 75%;
 	}
@@ -339,6 +347,8 @@
 }
 
 .retireAspiration {
+	padding: 6em 0 8em;
+
 	&Wrapper {
 		width: 90%;
 	}
@@ -386,6 +396,116 @@
 
 		.ctaLink {
 			margin-top: 3em;
+		}
+	}
+}
+
+.contactForm {
+	background-image: url("images/background-tip.jpg");
+	background-size: cover;
+	padding: 6em 0;
+
+	.container {
+		position: relative;
+	}
+
+	&Wrapper {
+		display: grid;
+		grid-template-columns: calc(50% - 2em) calc(50% - 2em);
+		grid-gap: 4em;
+	}
+
+	&Desciption {
+		img {
+			width: 60px;
+			height: auto;
+			margin-bottom: 1em;
+		}
+
+		h2 {
+			font-size: 2.2em;
+			color: white;
+			margin-bottom: 20px;
+		}
+
+		p {
+			font-size: 1.3em;
+			line-height: 1.4;
+			color: white;
+			margin-bottom: 2em;
+		}
+
+		select {
+			padding: 10px 20px;
+			font-family: inherit;
+			font-size: 1.1em;
+			width: 100%;
+			background-color: transparent;
+			//border: none;
+			border: 1px solid rgba(255, 255, 255, 0.4);
+			color: white;
+
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+
+	&Main {
+		background-color: black;
+		color: white;
+		padding: 4em;
+		position: absolute;
+		width: calc(50% - 2em);
+		right: 0;
+		top: -65%;
+
+		h2 {
+			font-size: 2.2em;
+			color: white;
+			margin-bottom: 20px;
+		}
+
+		input[type='text'], input[type='email'], input[type='tel'], textarea {
+			padding: 10px 20px 10px 0;
+			font-family: inherit;
+			font-size: 1.1em;
+			width: 100%;
+			margin-bottom: 1em;
+			background-color: transparent;
+			border: none;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+			color: white;
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+		textarea {
+			min-height: 6em;
+			margin-bottom: 30px;
+		}
+
+		input[type='checkbox'] {
+			margin-bottom: 30px;
+			transform: scale(2);
+			margin-right: 20px;
+		}
+
+		.halfed {
+			display: grid;
+			grid-template-columns: calc(50% - 0.5em) calc(50% - 0.5em);
+			grid-gap: 1em;
+		}
+
+		.ctaLink {
+			margin-top: 2em;
+			text-align: center;
+
+			.button {
+				border-color: white;
+			}
 		}
 	}
 }
