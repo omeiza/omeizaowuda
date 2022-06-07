@@ -1,0 +1,7 @@
+.grid {
+	display: grid;
+
+	&Header {
+		grid-template-columns: auto 120px;
+	}
+}
