@@ -9,11 +9,16 @@
 	padding: 8em 0 12em;
 	background-image: url("images/test-image-1.jpg");
 	background-size: cover;
-	background-position: 0 -20px;
+	//background-position: 0 -20px;
 	position: relative;
 	z-index: -1;
 
-	&.transferWindowJumbotron, &.multiFund {
+	&.transferWindowJumbotron,
+	&.multiFund,
+	&.investInfo,
+	&.about,
+	&.about-below,
+	&.contact {
 		padding: 6em 0;
 
 		h2 {
@@ -21,7 +26,7 @@
 		}
 
 		&:after {
-			background-color: rgba(0, 0, 0, 0.5);
+			background-color: rgba(0, 0, 0, 0.4);
 		}
 	}
 
@@ -33,6 +38,52 @@
 		background-image: url("images/multifund-back.jpg");
 	}
 
+	&.investInfo {
+		background-image: url("images/investment-info-back.jpg");
+	}
+
+	&.about {
+		background-image: url("images/about-us-back.jpg");
+	}
+
+	&.contact {
+		background-image: url("images/contact-back.jpg");
+		background-position: center;
+	}
+
+	&.aboutBelow {
+		background-image: url("images/about-us-back-2.jpg");
+		background-position: 100%;
+		margin-top: 6em;
+		background-repeat: no-repeat;
+
+		h2, p {
+			width: 100%;
+		}
+
+		h2 {
+			margin-bottom: 20px;
+		}
+	}
+
+	.aboutBelowWrapper {
+		display: grid;
+		grid-template-columns: repeat(2, calc(50% - 3em));
+		grid-gap: 6em;
+		position: relative;
+
+		&:after {
+			content: "";
+			position: absolute;
+			width: 1px;
+			height: 100%;
+			left: 50%;
+			top: 0;
+			background-color: rgba(#FFFFFF, 0.75);
+			transform: rotate(45deg);
+		}
+	}
+
 	&:after {
 		content: "";
 		position: absolute;
@@ -40,7 +91,7 @@
 		height: 100%;
 		top: 0;
 		left: 0;
-		background-color: rgba(0, 0, 0, 0.7);
+		background-color: rgba(0, 0, 0, 0.5);
 		z-index: -1;
 	}
 
@@ -559,6 +610,83 @@
 
 			.button {
 				border-color: white;
+			}
+		}
+	}
+}
+
+.contactPage {
+	margin: 0;
+	padding: 5em 0;
+
+	&Wrapper {
+		display: grid;
+		grid-template-columns: calc(40% - 2em) calc(60% - 2em);
+		grid-gap: 4em;
+	}
+
+	img {
+		width: 30px;
+	}
+
+	.addresses {
+		list-style: none;
+
+		li {
+			display: grid;
+			grid-template-columns: 45px calc(100% - 45px);
+			margin-bottom: 20px;
+
+			&:last-of-type {
+				margin-bottom: 40px;
+			}
+
+			p {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.social {
+		list-style: none;
+		display: grid;
+		grid-template-columns: repeat(4, 50px);
+
+		img {
+			height: 35px;
+		}
+	}
+
+	form {
+		input, select {
+			width: 100%;
+			padding: 10px 20px;
+			font-family: inherit;
+			font-size: 1.2em;
+			background-color: transparent;
+			border: 1px solid rgba(0, 0, 0, 0.4);
+			border-radius: 5px;
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+		label {
+			margin-bottom: 20px;
+			display: block;
+
+			p {
+				margin-bottom: 5px;
+			}
+		}
+
+		.ctaLink {
+			margin-top: 2em;
+
+			.button {
+				width: 100%;
+				text-align: center;
 			}
 		}
 	}

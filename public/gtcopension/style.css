@@ -185,24 +185,61 @@ header {
   padding: 8em 0 12em;
   background-image: url("images/test-image-1.jpg");
   background-size: cover;
-  background-position: 0 -20px;
   position: relative;
   z-index: -1;
 }
-.jumbotron.transferWindowJumbotron, .jumbotron.multiFund {
+.jumbotron.transferWindowJumbotron, .jumbotron.multiFund, .jumbotron.investInfo, .jumbotron.about, .jumbotron.about-below, .jumbotron.contact {
   padding: 6em 0;
 }
-.jumbotron.transferWindowJumbotron h2, .jumbotron.multiFund h2 {
+.jumbotron.transferWindowJumbotron h2, .jumbotron.multiFund h2, .jumbotron.investInfo h2, .jumbotron.about h2, .jumbotron.about-below h2, .jumbotron.contact h2 {
   margin: 0;
 }
-.jumbotron.transferWindowJumbotron:after, .jumbotron.multiFund:after {
-  background-color: rgba(0, 0, 0, 0.5);
+.jumbotron.transferWindowJumbotron:after, .jumbotron.multiFund:after, .jumbotron.investInfo:after, .jumbotron.about:after, .jumbotron.about-below:after, .jumbotron.contact:after {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .jumbotron.transferWindowJumbotron {
   background-image: url("images/keypoint-back.jpg");
 }
 .jumbotron.multiFund {
   background-image: url("images/multifund-back.jpg");
+}
+.jumbotron.investInfo {
+  background-image: url("images/investment-info-back.jpg");
+}
+.jumbotron.about {
+  background-image: url("images/about-us-back.jpg");
+}
+.jumbotron.contact {
+  background-image: url("images/contact-back.jpg");
+  background-position: center;
+}
+.jumbotron.aboutBelow {
+  background-image: url("images/about-us-back-2.jpg");
+  background-position: 100%;
+  margin-top: 6em;
+  background-repeat: no-repeat;
+}
+.jumbotron.aboutBelow h2, .jumbotron.aboutBelow p {
+  width: 100%;
+}
+.jumbotron.aboutBelow h2 {
+  margin-bottom: 20px;
+}
+.jumbotron .aboutBelowWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, calc(50% - 3em));
+  grid-gap: 6em;
+  position: relative;
+}
+.jumbotron .aboutBelowWrapper:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+  transform: rotate(45deg);
 }
 .jumbotron:after {
   content: "";
@@ -211,7 +248,7 @@ header {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
 .jumbotron .container {
@@ -638,6 +675,67 @@ header {
 }
 .contactFormMain .ctaLink .button {
   border-color: white;
+}
+
+.contactPage {
+  margin: 0;
+  padding: 5em 0;
+}
+.contactPageWrapper {
+  display: grid;
+  grid-template-columns: calc(40% - 2em) calc(60% - 2em);
+  grid-gap: 4em;
+}
+.contactPage img {
+  width: 30px;
+}
+.contactPage .addresses {
+  list-style: none;
+}
+.contactPage .addresses li {
+  display: grid;
+  grid-template-columns: 45px calc(100% - 45px);
+  margin-bottom: 20px;
+}
+.contactPage .addresses li:last-of-type {
+  margin-bottom: 40px;
+}
+.contactPage .addresses li p {
+  margin-bottom: 10px;
+}
+.contactPage .social {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+}
+.contactPage .social img {
+  height: 35px;
+}
+.contactPage form input, .contactPage form select {
+  width: 100%;
+  padding: 10px 20px;
+  font-family: inherit;
+  font-size: 1.2em;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+.contactPage form input:focus, .contactPage form select:focus {
+  outline: none;
+}
+.contactPage form label {
+  margin-bottom: 20px;
+  display: block;
+}
+.contactPage form label p {
+  margin-bottom: 5px;
+}
+.contactPage form .ctaLink {
+  margin-top: 2em;
+}
+.contactPage form .ctaLink .button {
+  width: 100%;
+  text-align: center;
 }
 
 .footer {
