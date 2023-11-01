@@ -9,7 +9,7 @@
   --gray20: hsl(var(--gray-hue), calc(var(--gray-sat-mult) * 40%), 70%);
   --gray30: hsl(var(--gray-hue), calc(var(--gray-sat-mult) * 30%), 30%);
   --gray35: hsl(var(--gray-hue), calc(var(--gray-sat-mult) * 15%), 20%);
-  --gray40: hsl(var(--gray-hue), calc(var(--gray-sat-mult) * 30%), 5%);
+  --gray40: #141e27;
 
   --baseline: 1.6;
   --xxs: 0.2;
@@ -112,9 +112,9 @@ a:focus {
   font-family: var(--font-caption);
 }
 
-.footnotes ol {
-  padding-left: 0;
-}
+/*.footnotes ol {*/
+/*  padding-left: 0;*/
+/*}*/
 
 .footnotes li {
   margin-bottom: var(--sp-xs);
@@ -142,7 +142,7 @@ sup[id^="fn"] a {
 
 h1,
 .h1 {
-  font-family: var(--font-heading);
+  font-family: var(--font-sans);
   font-size: var(--sp-xl);
   font-weight: 400;
   color: var(--font-color);
@@ -162,7 +162,7 @@ blockquote {
 }
 
 h2 {
-  font-family: var(--font-heading);
+  font-family: var(--font-sans);
   font-size: var(--sp-l);
   font-weight: 400;
   hyphens: initial;
@@ -366,8 +366,24 @@ img {
   text-align: center;
 }
 
+.logo path {
+  fill-rule: nonzero;
+}
+
+.logo svg {
+  display: block;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  stroke-linejoin: round;
+  stroke-miterlimit: 2;
+}
+
 @media (prefers-color-scheme: dark) {
   .invertInDarkMode {
     filter: invert(100%) hue-rotate(180deg);
+  }
+
+  .logo path {
+    fill: white;
   }
 }

@@ -2,22 +2,22 @@ import { Metadata } from "next"
 
 const metadata: Metadata = {
   title: {
-    template: `%s | Daniel Eden, Designer`,
-    absolute: "Daniel Eden, Designer",
+    template: `%s | Omeiza Owuda, UI Developer`,
+    absolute: "Omeiza Owuda, UI Developer",
   },
   description:
-    "The personal site, blog, and portfolio of Daniel Eden, a designer writing and thinking about design systems.",
+    "Personal website of Omeiza Owuda, a software developer who is focused on user interface development and design systems.",
   openGraph: {
-    title: "Daniel Eden, Designer",
+    title: "Omeiza Owuda, UI Developer",
     description:
-      "The personal site, blog, and portfolio of Daniel Eden, a designer writing and thinking about design systems.",
-    url: "https://daneden.me",
-    siteName: "Daniel Eden, Designer",
+      "The Personal website of Omeiza Owuda, a software developer who is focused on user interface development and design systems.",
+    url: "https://omeizaowuda.me",
+    siteName: "Omeiza Owuda, UI Developer",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@_dte",
-    creator: "@_dte",
+    site: "@_omzui",
+    creator: "@_omzui",
   },
 }
 

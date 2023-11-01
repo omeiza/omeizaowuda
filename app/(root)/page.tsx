@@ -1,78 +1,20 @@
 /* eslint-disable prefer-const */
-import LightswitchImage from "@/app/components/LightSwitchImage"
-import Timeline from "@/app/components/Timeline"
-import Image from "next/image"
 import Link from "next/link"
 import styles from "./home.module.css"
-import wwcg from "./wwcg.png"
 
 export default function HomePage() {
   return (
     <>
-      <div className={styles.root}>
-        <div className={`${styles.intro} ${styles.spanall}`}>
+      <div className={`${styles.root} ${styles.home}`}>
+        <div className={`${styles.intro}`}>
           <p className={styles.xxl}>
-            Daniel Eden is a Product Designer at{" "}
-            <a href="https://meta.com/">Meta</a> in London, working on making
-            Customer Support experiences that are more equitable, human, and
-            helpful. He spends his time <Link href="/blog">writing</Link>,
-            thinking, <a rel="me" href="https://threads.net/@_dte">posting</a>, and
-            talking about Design Systems: how they scale, how they break, and
-            the people&nbsp;that maintain&nbsp;them.
+            Hi, my name is Omeiza Owuda, I am software developer focused on user interface development and design systems. I currently work as a principal software developer at Notjustok LLC, where I build African music distribution and marketing platforms.
           </p>
         </div>
-        <Link
-          className={`${styles.tile} ${styles.solstice}`}
-          href="/portfolio/solstice"
-        >
-          <h2 className={styles.xxl}>Solstice</h2>
-          <p>An iOS app about daylight</p>
-          <LightswitchImage
-            alt="The Solstice app, showing sunrise and sunset information for Hackney, London"
-            height={2716}
-            srcDark="/uploads/portfolio/solstice-dark.png"
-            srcLight="/uploads/portfolio/solstice-light.png"
-            width={1339}
-          />
-        </Link>
-        <div className={`${styles.tile} ${styles.whereWeCanGo}`}>
-          <h2 className={styles.xxl}>Where We Can Go</h2>
-          <p>
-            A{" "}
-            <a href="https://www.clarityconf.com/session/where-we-can-go">
-              conference talk
-            </a>{" "}
-            and <Link href="/blog/2019/where-we-can-go">essay</Link> about
-            design systems and design tools.
-          </p>
-
-          <Image
-            src={wwcg}
-            alt="Daniel Eden presenting “Where We Can Go” at Clarity Conference 2019"
-            className={styles.wwcgImage}
-          />
-        </div>
-        <Link
-          className={`${styles.tile} ${styles.zeitgeist}`}
-          href="/portfolio/zeitgeist"
-        >
-          <h2 className={styles.xxl}>Zeitgeist</h2>
-          <p>Monitor your Vercel deployments</p>
-          <LightswitchImage
-            alt="The Zeitgeist app, showing deployment details for a successful build"
-            height={2716}
-            srcDark="/uploads/portfolio/zeitgeist-dark.png"
-            srcLight="/uploads/portfolio/zeitgeist-light.png"
-            width={1339}
-          />
-        </Link>
         <div className={`${styles.xxl} ${styles.tile} ${styles.extras}`}>
           <Link href="/blog">Writing &rarr;</Link>
           <Link href="/portfolio">Projects &rarr;</Link>
-          <Link href="/playlist">Playlist &rarr;</Link>
-        </div>
-        <div className={styles.spanall}>
-          <Timeline />
+          <Link href="/newsletter">Newsletter &rarr;</Link>
         </div>
       </div>
     </>

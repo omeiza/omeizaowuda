@@ -9,7 +9,7 @@ const soehne = fetch(
   new URL("https://daneden.me/og-fonts/Soehne-Buch.otf")
 ).then((res) => res.arrayBuffer())
 
-const defaultTitle = "Daniel Eden, Designer"
+const defaultTitle = "Omeiza Owuda, Senior Software Developer(UI)"
 
 export default async function opengraphImage(title = defaultTitle) {
   const tiemposFontData = await tiemposHeadline

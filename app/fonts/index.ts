@@ -1,4 +1,3 @@
-import { Instrument_Serif } from "next/font/google"
 import localFont from "next/font/local"
 
 export const soehne = localFont({
@@ -26,55 +25,21 @@ export const soehne = localFont({
   ],
   variable: "--font-sans",
   display: "auto",
-})
+});
 
-export const tiemposHeadline = localFont({
+export const merriweatherText = localFont({
   src: [
     {
-      path: "./TiemposHeadlineWeb-Light.woff2",
-      weight: "200",
-      style: "normal",
-    },
-    {
-      path: "./TiemposHeadlineWeb-LightItalic.woff2",
-      weight: "200",
-      style: "italic",
-    },
-  ],
-  variable: "--font-heading",
-  display: "auto",
-})
-
-export const tiemposText = localFont({
-  src: [
-    {
-      path: "./TiemposTextWeb-Regular.woff2",
+      path: "./merriweather-light.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "./TiemposTextWeb-RegularItalic.woff2",
+      path: "./merriweather-lightitalic.woff2",
       weight: "400",
       style: "italic",
-    },
-    {
-      path: "./TiemposTextWeb-Bold.woff2",
-      weight: "700",
-      style: "normal",
-    },
-    {
-      path: "./TiemposTextWeb-BoldItalic.woff2",
-      weight: "700",
-      style: "italic",
-    },
+    }
   ],
   variable: "--font-serif",
   display: "auto",
-})
-
-export const instrumentSerif = Instrument_Serif({
-  variable: "--font-heading",
-  display: "auto",
-  weight: "400",
-  subsets: ["latin", "latin-ext"],
-})
+});

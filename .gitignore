@@ -17,6 +17,7 @@
 /public/og
 
 # misc
+.idea/
 .DS_Store
 .env*
 .contentlayer/

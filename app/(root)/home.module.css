@@ -1,12 +1,17 @@
 .root {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
   --tile-padding: 1.8vmax;
+}
+
+.home {
+  height: 100vh;
 }
 
 .intro {
   padding: var(--tile-padding);
+  height: 100%;
+  overflow: auto;
 }
 
 .spanall {
@@ -23,7 +28,7 @@
   font-size: clamp(1.25rem, 2vmin, 3.5rem);
   background-color: var(--tile-background);
   color: var(--tile-foreground);
-  aspect-ratio: 1 / 1;
+  /*aspect-ratio: 1 / 1;*/
   padding: var(--tile-padding);
   text-align: center;
   overflow: hidden;
@@ -132,16 +137,15 @@ a.tile {
 @media (max-width: 1000px) {
   .root {
     grid-template-columns: 1fr;
-    display: block;
+    display: grid;
   }
 
-  .spanall {
-    grid-column: 1 / 2;
+  .intro {
+    height: auto;
   }
 
   .tile {
     aspect-ratio: unset;
     width: 100%;
-    display: block;
   }
 }

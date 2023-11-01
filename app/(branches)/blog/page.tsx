@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Blog",
-  description: "Daniel Eden’s Blog",
+  description: "Omeiza Owuda’s Blog",
 }
 
 export default function Blog() {
