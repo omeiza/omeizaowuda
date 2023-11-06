@@ -274,6 +274,7 @@ figure figcaption {
   order: 3;
   margin-top: var(--sp-xxs);
   color: var(--meta-color);
+  line-height: normal;
 }
 
 small,
