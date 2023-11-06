@@ -11,5 +11,5 @@ export async function GET(_req: Request, { params: { id } }) {
     return new Response("Not found", { status: 404 })
   }
 
-  return await opengraphImage(post.title)
+  return await opengraphImage(post.image)
 }

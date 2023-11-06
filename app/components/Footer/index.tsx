@@ -6,17 +6,11 @@ export default function Footer() {
     <>
       <footer className={styles.root}>
         <div className={`${styles.wrapper} small`}>
-          Written, designed, and built by Daniel Eden, a designer who you can
-          find on{" "}
-          <Link rel="me" href="https://threads.net/@_dte">
-            Threads
-          </Link>
-          ,{" "}
-          <Link rel="me" href="https://github.com/daneden">
+          You can find me on{" "}
+          <Link rel="me" href="https://twitter.com/_omzui">Twitter</Link> and {" "}
+          <Link rel="me" href="https://github.com/omeiza">
             GitHub
-          </Link>
-          , or good old-fashioned{" "}
-          <Link href="mailto:dan.eden@me.com">Email</Link>.
+          </Link>.
         </div>
       </footer>
     </>

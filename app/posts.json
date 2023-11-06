@@ -1,28 +1,11 @@
 {
   "posts": [
     {
-      "id": "three-phases-of-design-systems",
-      "title": "Three Phases of Life for Design Systems",
-      "description": "Design systems can be an intimidating undertaking: how can we create something that is robust and supports so many different needs? I’m here to tell you that the path you’re on is years long, but well worth it. Broadly speaking, your design system will undergo three phases of life: reflection, anticipation, and influence.",
-      "date": "2021-11-24"
-    },
-    {
-      "id": "thinking-is-work",
-      "title": "Thinking Is Work",
-      "description": "I’ve spoken with a lot of folks recently about a challenge imposed on us by increased remote work: losing time to think. Because of an increased need to communicate and align with peers and teammates—and few, ineffective tools for doing so (video-conferencing meetings and documents)—we find ourselves spending more time communicating than executing and, more critically, thinking about work.\n",
-      "date": "2021-05-26"
-    },
-    {
-      "id": "anatomy-of-a-typed-react-component",
-      "title": "Anatomy of a Typed React Component",
-      "description": null,
-      "date": "2020-06-30"
-    },
-    {
-      "id": "toss-a-coin-with-react-part-3",
-      "title": "Building a Coin-Tossing Simulator with React, Hooks, and Vercel: Part 3",
-      "description": null,
-      "date": "2020-02-03"
+      "id": "i-tried-generalism-and-i-hated-it",
+      "title": "I tried generalism and I hated it.",
+      "image": "Requirements of tech roles are ever-changing and it is difficult to keep up.",
+      "description": "My experience with generalism is related to the speed at which a skill or much-needed expertise can be acquired in tech. Requirements of tech roles are ever-changing and it is difficult to keep up, which is why trying to learn multiple skills with the same amount of time you would use to learn just a few is a bad strategy.",
+      "date": "2023-11-06"
     }
   ]
 }

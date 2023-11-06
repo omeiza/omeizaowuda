@@ -1,4 +1,3 @@
-/* eslint-disable prefer-const */
 import Link from "next/link"
 import styles from "./home.module.css"
 
@@ -8,7 +7,7 @@ export default function HomePage() {
       <div className={`${styles.root} ${styles.home}`}>
         <div className={`${styles.intro}`}>
           <p className={styles.xxl}>
-            Hi, my name is Omeiza Owuda, I am software developer focused on user interface development and design systems. I currently work as a principal software developer at Notjustok LLC, where I build African music distribution and marketing platforms.
+            Hi, my name is Omeiza (/ɔ-mei-za/), I am a Web Frontend Engineer focused on user experience. I spend most of my time writing and developing my ideas into useful projects.
           </p>
         </div>
         <div className={`${styles.xxl} ${styles.tile} ${styles.extras}`}>
