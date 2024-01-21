@@ -9,7 +9,7 @@
   --gray20: hsl(var(--gray-hue), calc(var(--gray-sat-mult) * 40%), 70%);
   --gray30: hsl(var(--gray-hue), calc(var(--gray-sat-mult) * 30%), 30%);
   --gray35: hsl(var(--gray-hue), calc(var(--gray-sat-mult) * 15%), 20%);
-  --gray40: #141e27;
+  --gray40: #181818;
 
   --baseline: 1.6;
   --xxs: 0.2;
@@ -38,7 +38,7 @@
   --site-color: #dd425c;
   --text-color: var(--gray40);
   --meta-color: var(--gray30);
-  --wash-color: var(--gray00);
+  --wash-color: #ffffff;
   --mark-color: rgba(255, 200, 0, 0.15);
   --highlight-color: #ffc800;
   --hover-color: var(--site-color);

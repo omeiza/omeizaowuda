@@ -21,13 +21,13 @@ export default function BranchPageLayout({ children }: { children: React.ReactNo
   return (
       <html className={`${soehne.variable} ${merriweatherText.variable}`}>
         <body>
-          <SkipLink />
-          <div className={`sp-m ${jetbrainsMono.variable}`}>
-            <Header />
+            <SkipLink />
+            <div className={`sp-m ${jetbrainsMono.variable}`}>
+                <Header />
                 <Wrapper>{children}</Wrapper>
-            <Footer />
-          </div>
-          <Analytics />
+                <Footer />
+            </div>
+            <Analytics />
         </body>
       </html>
   )

@@ -26,7 +26,7 @@ export default function Header({
     <>
       <header className={styles.root}>
         <Link className={`plainlink logo`} href="/">
-          <Image src={"/uploads/omeiza-sketch-back.png"} alt={"Omeiza Owuda"} width={40} height={40} />
+          <Image src={"/uploads/omeiza-sketch.png"} alt={"Omeiza Owuda"} width={40} height={40} />
         </Link>
         <nav className={styles.navigation}>
           <ul className="plainlist">
