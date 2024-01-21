@@ -23,10 +23,6 @@
   .root {
     grid-template-columns: auto auto;
   }
-
-  /*.root > * {*/
-  /*  grid-column: var(--center-column);*/
-  /*}*/
 }
 
 .activeSegment {

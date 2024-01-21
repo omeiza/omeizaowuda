@@ -1,14 +1,14 @@
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-    title: "Newsletter",
-    description: "Newsletter page of Omeiza Owuda, to allow sharing of ideas about Web Frontend Engineering.",
+    title: "Resume",
+    description: "Resume of Omeiza Owuda",
 }
 
-export default function PortfolioPage() {
+export default function ResumePage() {
     return (
         <>
-            <h1>Newsletter</h1>
+            <h1>Resume</h1>
             <p>
                 I intend to build a community of like and unlike minds, to allow a flow of ideas via my newsletter. This is underway, stay tuned.
             </p>

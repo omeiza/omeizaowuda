@@ -367,16 +367,21 @@ img {
   text-align: center;
 }
 
-.logo path {
-  fill-rule: nonzero;
+.logo {
+  display: block;
 }
 
-.logo svg {
+.logo img {
   display: block;
-  fill-rule: evenodd;
-  clip-rule: evenodd;
-  stroke-linejoin: round;
-  stroke-miterlimit: 2;
+  width: 50px !important;
+  height: 50px !important;
+}
+
+@media (max-width: 64em) {
+  .logo img {
+    width: 40px !important;
+    height: 40px !important;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

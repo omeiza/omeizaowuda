@@ -1,7 +1,7 @@
 .root {
   border-top: 1px solid;
   margin-top: var(--sp-l);
-  padding-bottom: var(--sp-l);
+  /*padding-bottom: var(--sp-l);*/
   padding-top: var(--sp-s);
   color: var(--meta-color);
   display: grid;

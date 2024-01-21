@@ -13,7 +13,7 @@ export default function HomePage() {
         <div className={`${styles.xxl} ${styles.tile} ${styles.extras}`}>
           <Link href="/blog">Writing &rarr;</Link>
           <Link href="/portfolio">Projects &rarr;</Link>
-          <Link href="/newsletter">Newsletter &rarr;</Link>
+          <Link href="/resume">Resume &rarr;</Link>
         </div>
       </div>
     </>

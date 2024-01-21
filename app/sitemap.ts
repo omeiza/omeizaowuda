@@ -22,7 +22,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(),
     },
     {
-      url: "https://omeizaowuda.me/newsletter",
+      url: "https://omeizaowuda.me/resume",
       lastModified: new Date(),
     },
     {
