@@ -6,7 +6,6 @@
 
 .home {
   height: 100vh;
-  overflow: hidden;
 }
 
 .intro {
@@ -131,8 +130,9 @@ a.tile {
 
 @media (max-width: 1000px) {
   .root {
-    grid-template-rows: 1fr;
+    grid-template-rows: 2fr 1fr;
     display: grid;
+    overflow: hidden;
   }
 
   .intro {
