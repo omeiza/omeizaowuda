@@ -130,9 +130,9 @@ a.tile {
 
 @media (max-width: 1000px) {
   .root {
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 1fr;
     display: grid;
-    overflow: hidden;
+    height: auto;
   }
 
   .intro {
