@@ -22,7 +22,7 @@ export default function ResumePage() {
                     </ul>
                 </div>
                 <div>
-                    <h3>Software Development Manager / Sept 2020 - April 2023</h3>
+                    <h3>Senior Software Developer / Sept 2020 - April 2023</h3>
                     <ul>
                         <li>Led and managed a team of 6 Software Developers to build and maintain all of Notjustok’s web and mobile platforms.</li>
                         <li>Created API integration for the Mino Music web app with Audible Magic to allow automatic content recognition (ACR) for songs and reduce copyright issues.</li>
