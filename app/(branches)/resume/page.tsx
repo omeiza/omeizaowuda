@@ -2,7 +2,16 @@ import { Metadata } from "next"
 
 export const metadata: Metadata = {
     title: "Resume",
-    description: "Resume of Omeiza Owuda",
+    description: "Technical background, skills, and accomplishments of Omeiza Owuda",
+    openGraph: {
+        title: "Resume",
+        description: "Technical background, skills, and accomplishments of Omeiza Owuda",
+        images: [
+            {
+                url: "/uploads/omeiza-web-version.jpg",
+            },
+        ],
+    },
 }
 
 export default function ResumePage() {
