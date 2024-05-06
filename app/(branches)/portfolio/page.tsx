@@ -5,10 +5,11 @@ export const metadata: Metadata = {
 	description: "Collection of wide range of technical projects",
 	openGraph: {
 		title: "Portfolio",
+		url: "https://omeizaowuda.me/portfolio",
 		description: "Collection of wide range of technical projects",
 		images: [
 			{
-				url: "https://omeizaowuda.me/uploads/omeiza-web-version-cropped.jpg",
+				url: "https://omeizaowuda.me/uploads/omeiza-sketch.jpg",
 			},
 		],
 	},
