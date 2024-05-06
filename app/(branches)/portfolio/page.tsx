@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 		description: "Collection of wide range of technical projects",
 		images: [
 			{
-				url: "https://omeizaowuda.me/uploads/omeiza-web-version.jpg",
+				url: "https://omeizaowuda.me/uploads/omeiza-web-version-cropped.jpg",
 			},
 		],
 	},

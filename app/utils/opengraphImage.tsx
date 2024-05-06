@@ -5,7 +5,7 @@ const soehne = fetch(
   new URL("https://omeizaowuda.me/og-fonts/Soehne-Buch.otf")
 ).then((res) => res.arrayBuffer())
 
-const defaultTitle = "Omeiza Owuda, Web Frontend Engineer."
+const defaultTitle = "Omeiza Owuda, Software Developer"
 
 export default async function opengraphImage(imageText = defaultTitle) {
     const soehneFontData = await soehne

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
         description: "Work background, skills, and accomplishments",
         images: [
             {
-                url: "https://omeizaowuda.me/uploads/omeiza-web-version.jpg",
+                url: "https://omeizaowuda.me/uploads/omeiza-web-version-cropped.jpg",
             },
         ],
     },

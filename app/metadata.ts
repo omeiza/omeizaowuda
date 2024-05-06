@@ -7,18 +7,18 @@ const metadata: Metadata = {
   },
   description: "Personal website, creative dump, and technical blog.",
   openGraph: {
-    title: "Omeiza Owuda, Web Engineer",
+    title: "Omeiza Owuda, Software Developer",
     description: "Personal website, creative dump, and technical blog.",
     url: "https://omeizaowuda.me",
     siteName: "Omeiza Owuda, Software Developer",
     images: [
       {
-        url: "https://omeizaowuda.me/uploads/omeiza-web-version.jpg",
+        url: "https://omeizaowuda.me/uploads/omeiza-web-version-cropped.jpg",
       },
     ],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     site: "@omeiza_owuda",
     creator: "@omeiza_owuda",
   },
