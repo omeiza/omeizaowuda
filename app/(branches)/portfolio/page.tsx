@@ -2,7 +2,16 @@ import { Metadata } from "next"
 
 export const metadata: Metadata = {
 	title: "Portfolio",
-	description: "Omeiza Owuda’s portfolio of Web Frontend Engineering projects",
+	description: "Collection of wide range of technical projects",
+	openGraph: {
+		title: "Portfolio",
+		description: "Collection of wide range of technical projects",
+		images: [
+			{
+				url: "https://omeizaowuda.me/uploads/omeiza-web-version.jpg",
+			},
+		],
+	},
 }
 
 export default function PortfolioPage() {

@@ -2,13 +2,13 @@ import { Metadata } from "next"
 
 export const metadata: Metadata = {
     title: "Resume",
-    description: "Technical background, skills, and accomplishments of Omeiza Owuda",
+    description: "Work background, skills, and accomplishments",
     openGraph: {
         title: "Resume",
-        description: "Technical background, skills, and accomplishments of Omeiza Owuda",
+        description: "Work background, skills, and accomplishments",
         images: [
             {
-                url: "/uploads/omeiza-web-version.jpg",
+                url: "https://omeizaowuda.me/uploads/omeiza-web-version.jpg",
             },
         ],
     },

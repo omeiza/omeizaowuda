@@ -4,8 +4,17 @@ import { Metadata } from "next"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Blog",
-  description: "Omeiza Owuda’s Blog",
+    title: "Blog",
+    description: "Record of personal reflections and technical observations",
+    openGraph: {
+        title: "Blog",
+        description: "Record of personal reflections and technical observations",
+        images: [
+            {
+                url: "https://omeizaowuda.me/uploads/omeiza-web-version.jpg",
+            },
+        ],
+    },
 }
 
 export default function Blog() {
