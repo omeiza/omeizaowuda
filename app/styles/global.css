@@ -378,7 +378,7 @@ img {
 }
 
 .logo:hover {
-  color: white;
+  color: black;
 }
 
 .logo p {
@@ -448,6 +448,6 @@ img {
   }
 
   .logo:hover {
-    color: black;
+    color: white;
   }
 }
