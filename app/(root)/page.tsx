@@ -1,5 +1,23 @@
 import Link from "next/link"
 import styles from "./home.module.css"
+import {Metadata} from "next";
+
+
+const metadata: Metadata = {
+  title: "Omeiza Owuda, Software Developer",
+  description: "Personal website, creative dump, and technical blog",
+  openGraph: {
+    title: "Omeiza Owuda, Software Developer",
+    description: "Personal website, creative dump, and technical blog",
+    url: "https://omeizaowuda.me",
+    siteName: "Omeiza Owuda, Software Developer",
+    images: [
+      {
+        url: "https://omeizaowuda.me/uploads/social-og-img.jpg",
+      },
+    ],
+  }
+}
 
 export default function HomePage() {
   return (

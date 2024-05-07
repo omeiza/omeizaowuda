@@ -5,10 +5,10 @@ const metadata: Metadata = {
     template: `%s | Omeiza Owuda, Software Developer`,
     absolute: "Omeiza Owuda, Software Developer",
   },
-  description: "Personal website, creative dump, and technical blog.",
+  description: "Personal website, creative dump, and technical blog",
   openGraph: {
     title: "Omeiza Owuda, Software Developer",
-    description: "Personal website, creative dump, and technical blog.",
+    description: "Personal website, creative dump, and technical blog",
     url: "https://omeizaowuda.me",
     siteName: "Omeiza Owuda, Software Developer",
     images: [
