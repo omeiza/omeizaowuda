@@ -9,7 +9,7 @@ export const metadata: Metadata = {
         url: "https://omeizaowuda.me/resume",
         images: [
             {
-                url: "https://omeizaowuda.me/uploads/omeiza-sketch.jpg",
+                url: "https://omeizaowuda.me/uploads/social-og-img.jpg",
             },
         ],
     },

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
         description: "Record of personal reflections and technical observations",
         images: [
             {
-                url: "https://omeizaowuda.me/uploads/omeiza-sketch.jpg",
+                url: "https://omeizaowuda.me/uploads/social-og-img.jpg",
             },
         ],
     },

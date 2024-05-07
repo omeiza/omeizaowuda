@@ -13,7 +13,7 @@ const metadata: Metadata = {
     siteName: "Omeiza Owuda, Software Developer",
     images: [
       {
-        url: "https://omeizaowuda.me/uploads/omeiza-sketch.jpg",
+        url: "https://omeizaowuda.me/uploads/social-og-img.jpg",
       },
     ],
   },

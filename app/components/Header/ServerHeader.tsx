@@ -1,6 +1,5 @@
 import Link from "next/link"
 import styles from "./styles.module.css"
-import Image from "next/image";
 
 const links = [
   {
@@ -26,7 +25,7 @@ export default function Header({
     <>
       <header className={styles.root}>
         <Link className={`plainlink logo`} href="/">
-          <Image src={"/uploads/omeiza-sketch.png"} alt={"Omeiza Owuda"} width={40} height={40} />
+          <p>Omeiza <span className={'surname'}>Owuda</span><span className={'cursor'}>_</span></p>
         </Link>
         <nav className={styles.navigation}>
           <ul className="plainlist">
