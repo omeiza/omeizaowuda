@@ -6,10 +6,10 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Resume",
         description: "Work background, skills, and accomplishments",
-        url: "https://omeizaowuda.me/resume",
+        url: "https://omeizaowuda.com/resume",
         images: [
             {
-                url: "https://omeizaowuda.me/uploads/social-og-img.jpg",
+                url: "https://omeizaowuda.com/uploads/social-og-img.jpg",
             },
         ],
     },

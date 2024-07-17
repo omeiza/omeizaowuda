@@ -8,10 +8,10 @@ export function GET() {
   <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Omeiza Owuda</title>
     <subtitle>Blog</subtitle>
-    <link href="https://omeizaowuda.me/feed" rel="self"/>
-    <link href="https://omeizaowuda.me/"/>
+    <link href="https://omeizaowuda.com/feed" rel="self"/>
+    <link href="https://omeizaowuda.com/"/>
     <updated>${posts[0].date}</updated>
-    <id>https://omeizaowuda.me/</id>
+    <id>https://omeizaowuda.com/</id>
     <author>
       <name>Omeiza Owuda</name>
       <email>owudaomeiza@gmail.com</email>
@@ -23,7 +23,7 @@ export function GET() {
         <entry>
           <id>${post.id}</id>
           <title>${post.title}</title>
-          <link href="https://omeizaowuda.me/blog/${post.slug}"/>
+          <link href="https://omeizaowuda.com/blog/${post.slug}"/>
           <updated>${post.date}</updated>
         </entry>`
     }, "")}

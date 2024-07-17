@@ -7,30 +7,30 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const posts = getPosts()
   const blogPosts = posts.map((post) => {
     return {
-      url: `https://omeizaowuda.me/blog/${post.slug}`,
+      url: `https://omeizaowuda.com/blog/${post.slug}`,
       lastModified: new Date(),
     }
   })
 
   return [
     {
-      url: "https://omeizaowuda.me",
+      url: "https://omeizaowuda.com",
       lastModified: new Date(),
     },
     {
-      url: "https://omeizaowuda.me/portfolio",
+      url: "https://omeizaowuda.com/portfolio",
       lastModified: new Date(),
     },
     {
-      url: "https://omeizaowuda.me/resume",
+      url: "https://omeizaowuda.com/resume",
       lastModified: new Date(),
     },
     {
-      url: "https://omeizaowuda.me/blog",
+      url: "https://omeizaowuda.com/blog",
       lastModified: new Date(),
     },
     {
-      url: "https://omeizaowuda.me",
+      url: "https://omeizaowuda.com",
       lastModified: new Date(),
     },
     ...blogPosts,

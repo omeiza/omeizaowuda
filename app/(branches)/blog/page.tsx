@@ -8,11 +8,11 @@ export const metadata: Metadata = {
     description: "Record of personal reflections and technical observations",
     openGraph: {
         title: "Blog",
-        url: "https://omeizaowuda.me/blog",
+        url: "https://omeizaowuda.com/blog",
         description: "Record of personal reflections and technical observations",
         images: [
             {
-                url: "https://omeizaowuda.me/uploads/social-og-img.jpg",
+                url: "https://omeizaowuda.com/uploads/social-og-img.jpg",
             },
         ],
     },

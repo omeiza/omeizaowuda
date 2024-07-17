@@ -9,11 +9,11 @@ const metadata: Metadata = {
   openGraph: {
     title: "Omeiza Owuda, Software Developer",
     description: "Personal website, creative dump, and technical blog",
-    url: "https://omeizaowuda.me",
+    url: "https://omeizaowuda.com",
     siteName: "Omeiza Owuda, Software Developer",
     images: [
       {
-        url: "https://omeizaowuda.me/uploads/social-og-img.jpg",
+        url: "https://omeizaowuda.com/uploads/social-og-img.jpg",
       },
     ],
   },
