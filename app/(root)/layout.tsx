@@ -1,5 +1,5 @@
 import SkipLink from "@/app/components/SkipLink"
-import { Analytics } from "@vercel/analytics/react"
+import GoogleAnalytics from "@/app/components/GoogleAnalytics";
 import {soehne, merriweatherText} from "../fonts"
 import sharedMetadata from "../metadata"
 import "../styles/global.css"
@@ -13,10 +13,10 @@ export default function RootLayout({
 }) {
   return (
       <html className={`${soehne.variable} ${merriweatherText.variable}`}>
-        <body>
+        <body className={'fff'}>
           <SkipLink />
           {children}
-          <Analytics />
+          <GoogleAnalytics />
         </body>
       </html>
   )
