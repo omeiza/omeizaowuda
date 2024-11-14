@@ -1,8 +1,8 @@
-import SkipLink from "@/app/components/SkipLink"
-import GoogleAnalytics from "@/app/components/GoogleAnalytics";
-import {soehne, merriweatherText} from "../fonts"
-import sharedMetadata from "../metadata"
-import "../styles/global.css"
+import SkipLink from "@/app/components/SkipLink";
+import {soehne, merriweatherText} from "../fonts";
+import sharedMetadata from "../metadata";
+import "../styles/global.css";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 export const metadata = sharedMetadata
 
@@ -13,11 +13,11 @@ export default function RootLayout({
 }) {
   return (
       <html className={`${soehne.variable} ${merriweatherText.variable}`}>
-        <body className={'fff'}>
+        <body>
           <SkipLink />
           {children}
-          <GoogleAnalytics />
         </body>
+        <GoogleAnalytics gaId="G-CWHKXNMD9G" />
       </html>
   )
 }
