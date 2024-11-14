@@ -2,10 +2,17 @@
   "posts": [
     {
       "id": "i-tried-generalism-and-i-hated-it",
-      "title": "I tried generalism and I hated it.",
+      "title": "I tried generalism and I hated it",
       "image": "Requirements of tech roles are ever-changing and it is difficult to keep up.",
       "description": "Requirements of tech roles are ever-changing and it is difficult to keep up.",
       "date": "2023-11-06"
+    },
+    {
+      "id": "finding-the-largest-prime-factor-of-a-number-using-c",
+      "title": "Finding the Largest Prime Factor of a Number Using C",
+      "image": "New to C programming",
+      "description": "Finding the Largest Prime Factor of a Number Using C",
+      "date": "2024-11-14"
     }
   ]
 }

@@ -1,0 +1,113 @@
+export const metadata = {
+	title: "Finding the Largest Prime Factor of a Number Using C",
+	description: "I am new to C, here is how I solved the problem of finding the largest prime factor of a number using the C programming language.",
+	openGraph: {
+		title: "Finding the Largest Prime Factor of a Number Using C",
+		description: "I am new to C, here is how I solved the problem of finding the largest prime factor of a number using the C programming language.",
+		images: [
+			{
+				url: "/og/new-to-c-programming"
+			},
+		],
+	},
+}
+
+# Finding the Largest Prime Factor of a Number Using C
+
+One of the fascinating problems in mathematics and programming is finding the largest prime factor of a number.
+
+In this blog post, I’ll walk you through how I solved the problem of finding the largest prime factor of the number
+*600851475143* using the C programming language. This exercise not only strengthens understanding of prime numbers but
+also provides a great opportunity to implement loops, conditionals, and functions in C.
+
+## Understanding the Problem
+
+A prime factor is a factor of a number that is a prime number. For example: The prime factors of *28* are *2* and *7* because
+both are prime numbers and divide *28* without leaving a remainder.
+
+Given a large number, such as *600851475143*, find the largest prime factor.
+
+## The Solution in C
+
+To solve this, I wrote a program in C. Here’s the step-by-step breakdown of the approach:
+
+Firstly, we need a utility function called ```isPrime``` to check if a number is prime. A prime number is only divisible by 1
+and itself. This idea can be translated into a function that loops through a given number starting from 2 and ending at
+the last number before the given number.
+
+Here’s the function:
+
+```c
+bool isPrime(const int input) {
+    for (int i = 2; i < input; i++) {
+        if (input % i == 0) return false;
+    }
+
+    return input > 1;
+}
+```
+
+The next step is to create a function called ```largestPrimeNumber``` iterate through all potential divisors starting
+from 2. If a divisor divides the number perfectly, we divide the number by that divisor and check if it’s a prime number
+by calling the ```isPrime``` function.
+
+At each iteration, if the divisor is prime and larger than the previous largest prime factor, we update our result.
+Here’s the full implementation:
+
+```c
+#include <stdio.h>
+#include <stdbool.h>
+
+// Utility function to find if a number is prime
+bool isPrime(const int input) {
+    for (int i = 2; i < input; i++) {
+        if (input % i == 0) return false;
+    }
+    return input > 1;
+}
+
+// Function to find the largest prime factor
+int largestPrimeFactor(long num) {
+    int largestPrimeFactor = 0;
+
+    for (int divisor = 2; divisor <= num; divisor++) {
+        if (num % divisor == 0) {
+            num = num / divisor;
+
+            // Update largestPrimeFactor
+            if (isPrime(divisor) && largestPrimeFactor < divisor)
+                largestPrimeFactor = divisor;
+        }
+    }
+    return largestPrimeFactor;
+}
+
+int main() {
+    const long num = 600851475143;
+
+    largestPrimeFactor(num)
+        ? printf("The largest prime factor of %ld is %d\n", num, largestPrimeFactor(num))
+        : printf("%ld has no prime factor\n", num);
+
+    return 0;
+}
+```
+
+When you run the program, it should print:
+
+```The largest prime factor of 600851475143 is 6857```
+
+## Optimizations and Improvements
+The solution works but can be optimized:
+1. **Prime Checking**: Instead of checking divisors from *2* to *input - 1*, only check up to the square root of the number. I
+learnt this smart idea from my [Dr. Emeka Ogbuju](https://www.linkedin.com/in/emekaogbuju/).
+2. **Divisor Iteration**: After dividing by a prime factor, we can skip other even numbers by incrementing by 2 for odd divisors.
+
+The codebase is also on [github](https://github.com/omeiza/largest-prime-factor-in-c).
+
+If you’re learning C, I encourage you to tweak this program! Try implementing the optimizations or finding the largest
+prime factor of another number. Happy coding!
+
+
+
+

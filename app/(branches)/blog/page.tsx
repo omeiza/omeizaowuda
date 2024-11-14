@@ -15,7 +15,7 @@ export const metadata: Metadata = {
                 url: "https://omeizaowuda.com/uploads/social-og-img.jpg",
             },
         ],
-    },
+    }
 }
 
 export default function Blog() {
