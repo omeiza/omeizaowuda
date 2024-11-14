@@ -373,7 +373,7 @@ img {
 }
 
 .logo {
-  display: block;
+  display: grid;
   width: max-content;
 }
 
