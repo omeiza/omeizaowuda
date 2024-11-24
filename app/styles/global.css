@@ -372,70 +372,9 @@ img {
   text-align: center;
 }
 
-.logo {
-  display: grid;
-  width: max-content;
-}
-
-.logo:hover {
-  color: black;
-}
-
-.logo p {
-  position: relative;
-  font-size: 1.05em;
-  margin: 0.5em 0;
-  display: flex;
-}
-
-.logo .surname {
-  display: inline-block;
-  margin-left: 3px;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 0;
-  animation: typing;
-  animation-duration: 8s;
-  animation-timing-function: steps(30, end);
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-}
-
-.logo .cursor {
-  display: inline-block;
-  position: relative;
-  bottom: 2px;
-  left: 2px;
-  color: var(--site-color);
-  font-weight: 700;
-  opacity: 0;
-  animation-name: blink;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes typing {
-  50%, 100% {
-    width: 100%
-  }
-
-  0% {
-    width: 0;
-  }
-  50% {
-    width: 100%;
-  }
-  /*from { width: 0 }*/
-  /*to { width: 100% }*/
-}
-
-@keyframes blink {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.logo svg {
+  width: 40px;
+  height: 40px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -443,11 +382,7 @@ img {
     filter: invert(100%) hue-rotate(180deg);
   }
 
-  .logo path {
-    fill: white;
-  }
-
-  .logo:hover {
+  .logo {
     color: white;
   }
 }
