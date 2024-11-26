@@ -19,7 +19,7 @@ export default function ResumePage() {
     return (
         <>
             <h1>Resume</h1>
-            <p>Experienced Software Developer with over 8 years of experience in designing and building scalable platforms for music, news, and analytics applications. Skilled in TypeScript, Python, React.js, and AWS, with a proven track record of delivering high-impact solutions to global audiences.</p>
+            <p>Experienced Software Developer with over 8 years of experience in designing and building scalable platforms for music, news, and analytics applications. Skilled in TypeScript, Python, PHP, React.js, and AWS, with a proven track record of delivering high-impact solutions to global audiences.</p>
             <div>
                 <h2>Notjustok LLC</h2>
                 <div>
