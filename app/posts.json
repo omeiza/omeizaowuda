@@ -13,6 +13,12 @@
       "image": "New to C programming",
       "description": "Finding the Largest Prime Factor of a Number Using C",
       "date": "2024-11-14"
+    },
+    {
+      "id": "balancing-work-study-and-life-my-first-year-at-miva-university",
+      "title": "Balancing Work, Study, and Life: My First Year at Miva",
+      "description": "Learning at Miva Open University: a journey of self-discipline, career growth, and transitioning to machine learning.",
+      "date": "2025-01-18"
     }
   ]
 }

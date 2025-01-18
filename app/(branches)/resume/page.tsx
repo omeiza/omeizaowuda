@@ -23,7 +23,7 @@ export default function ResumePage() {
             <div>
                 <h2>Notjustok LLC</h2>
                 <div>
-                    <h3>Principal Software Developer / May 2023 - Present</h3>
+                    <h3>Senior Software Developer / May 2023 - Present</h3>
                     <ul>
                         <li>Developed Notjustok Distribution’s music artist reporting platform that analyzes music data and processes individual artist royalties from Spotify and Apple Music.</li>
                         <li>Built the African Cup of Nations 2023 Predict N’ Win app, enabling football enthusiasts across Africa to engage with predictions reaching thousands of active users.</li>
@@ -32,7 +32,7 @@ export default function ResumePage() {
                     </ul>
                 </div>
                 <div>
-                    <h3>Senior Software Developer / Feb 2018 - Apr 2023</h3>
+                    <h3>Software Developer / Feb 2018 - Apr 2023</h3>
                     <ul>
                         <li>Built the front-end and API for Mino Music, integrating Audible Magic’s audio content recognition (ACR) to prevent copyright violations.</li>
                         <li>Enhanced song and artist search using Elasticsearch, with Kibana for data visualization and Logstash for event processing.</li>
