@@ -29,10 +29,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: "https://omeizaowuda.com/blog",
       lastModified: new Date(),
     },
-    {
-      url: "https://omeizaowuda.com",
-      lastModified: new Date(),
-    },
     ...blogPosts,
   ]
 }
