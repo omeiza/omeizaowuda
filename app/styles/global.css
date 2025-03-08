@@ -168,6 +168,7 @@ h2 {
   hyphens: initial;
   margin-bottom: var(--sp-m);
   padding-top: var(--sp-s);
+  line-height: normal;
 }
 
 h3 {

@@ -3,6 +3,7 @@ import {soehne, merriweatherText} from "../fonts";
 import sharedMetadata from "../metadata";
 import "../styles/global.css";
 import { GoogleAnalytics } from '@next/third-parties/google';
+import React from "react";
 
 export const metadata = sharedMetadata
 
