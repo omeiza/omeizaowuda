@@ -10,7 +10,7 @@
 		"start": "next start"
 	},
 	"engines": {
-		"node": "20.18.0"
+		"node": "20.18.x"
 	},
 	"dependencies": {
 		"@mdx-js/loader": "^2.3.0",
