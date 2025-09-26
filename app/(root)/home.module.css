@@ -132,7 +132,7 @@ a.tile {
   .root {
     grid-template-rows: 1fr;
     display: grid;
-    height: auto;
+    /*height: auto;*/
   }
 
   .intro {

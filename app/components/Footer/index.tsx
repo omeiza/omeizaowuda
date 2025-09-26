@@ -7,10 +7,8 @@ export default function Footer() {
       <footer className={styles.root}>
         <div className={`${styles.wrapper} small`}>
           You can find me on{" "}
-          <Link rel="me" href="https://twitter.com/_omzui">Twitter</Link> and {" "}
-          <Link rel="me" href="https://github.com/omeiza">
-            GitHub
-          </Link>.
+          <Link rel="me" href="https://x.com/omeiza_owuda">X</Link> and {" "}
+          <Link rel="me" href="https://github.com/omeiza">GitHub</Link>.
         </div>
       </footer>
     </>

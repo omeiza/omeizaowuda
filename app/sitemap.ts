@@ -18,11 +18,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(),
     },
     {
-      url: "https://omeizaowuda.com/portfolio",
+      url: "https://omeizaowuda.com/projects",
       lastModified: new Date(),
     },
     {
-      url: "https://omeizaowuda.com/resume",
+      url: "https://omeizaowuda.com/code-and-purpose",
       lastModified: new Date(),
     },
     {

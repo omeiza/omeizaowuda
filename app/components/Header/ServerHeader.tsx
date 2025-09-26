@@ -6,13 +6,13 @@ const links = [
     to: "/blog",
     label: "Blog",
   },
+  // {
+  //   to: "/portfolio",
+  //   label: "Portfolio",
+  // },
   {
-    to: "/portfolio",
-    label: "Portfolio",
-  },
-  {
-    to: "/resume",
-    label: "Resume",
+    to: "/code-and-purpose",
+    label: "Newsletter",
   },
 ]
 
