@@ -2,7 +2,7 @@ import Footer from "@/app/components/Footer"
 import Header from "@/app/components/Header"
 import SkipLink from "@/app/components/SkipLink"
 import Wrapper from "@/app/components/Wrapper"
-import { Analytics } from "@vercel/analytics/react"
+import { GoogleAnalytics } from "@next/third-parties/google"
 import { JetBrains_Mono } from "next/font/google"
 import { soehne, merriweatherText } from "../fonts"
 import sharedMetadata from "../metadata"
@@ -21,13 +21,12 @@ export default function BranchPageLayout({ children }: { children: React.ReactNo
   return (
       <html className={`${soehne.variable} ${merriweatherText.variable}`}>
         <body>
-            <SkipLink />
             <div className={`sp-m ${jetbrainsMono.variable}`}>
                 <Header />
                 <Wrapper>{children}</Wrapper>
                 <Footer />
             </div>
-            <Analytics />
+            <GoogleAnalytics gaId="G-CWHKXNMD9G" />
         </body>
       </html>
   )

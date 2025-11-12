@@ -38,7 +38,7 @@
   --site-color: #dd425c;
   --text-color: var(--gray40);
   --meta-color: var(--gray30);
-  --wash-color: #ffffff;
+  --wash-color: #f9f9f9;
   --mark-color: rgba(255, 200, 0, 0.15);
   --highlight-color: #ffc800;
   --hover-color: var(--site-color);
@@ -51,6 +51,8 @@
 
   --font-body: var(--font-serif);
   --font-caption: var(--font-sans);
+
+  --big-link: #ececec;
 
   background-color: var(--wash-color);
   color: var(--text-color);
@@ -73,8 +75,10 @@
     --text-color: var(--gray00);
     --meta-color: var(--gray10);
     --wash-color: var(--gray40);
-    --code-wash: #222;
+    --code-wash: #212121;
     --code-color: #eee;
+    --gray30: #414141;
+    --big-link: #ececec;
   }
 }
 
@@ -90,6 +94,10 @@ video {
   max-width: 100%;
 }
 
+figcaption {
+  text-align: center;
+}
+
 ul,
 ol {
   margin-bottom: var(--sp-m);
@@ -99,14 +107,14 @@ ol {
 a {
   color: inherit;
   text-decoration-line: underline;
-  text-decoration-color: var(--hover-color) !important;
+  text-decoration-color: var(--gray30);
   text-decoration-thickness: max(0.05em, 1px);
 }
 
-a:hover,
+/* a:hover,
 a:focus {
   color: var(--hover-color);
-}
+} */
 
 .footnotes {
   font-family: var(--font-caption);
@@ -147,10 +155,10 @@ h1,
   font-weight: 400;
   color: var(--font-color);
   hyphens: initial;
-  line-height: 1.2;
+  line-height: 1.1;
   margin-bottom: var(--sp-m);
   padding-bottom: var(--sp-l);
-  padding-top: var(--sp-xl);
+  /* padding-top: var(--sp-xl); */
   letter-spacing: -0.0125em;
 }
 
@@ -346,6 +354,12 @@ aside :last-child {
 
 .plainlink {
   text-decoration: none;
+  height: 30px;
+}
+
+.plainlink:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
 img {
@@ -363,6 +377,12 @@ img {
   margin-bottom: var(--sp-m);
   line-height: 1.3;
   font-size: 1.05em;
+  border-bottom: 1px solid var(--gray30);
+  padding-bottom: var(--sp-m);
+}
+
+.post-list-item:last-of-type {
+  border-bottom: none;
 }
 
 .sp-m {
@@ -374,8 +394,14 @@ img {
 }
 
 .logo svg {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
+}
+
+.date {
+  padding-top: var(--sp-xxl);
+  padding-bottom: var(--sp-xs);
+  display: inline-block;
 }
 
 @media (prefers-color-scheme: dark) {

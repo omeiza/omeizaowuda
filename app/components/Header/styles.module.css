@@ -27,6 +27,6 @@
 
 .activeSegment {
   text-decoration: underline !important;
-  text-decoration-color: var(--hover-color) !important;
+  text-decoration-color: var(--gray30) !important;
   text-decoration-thickness: max(0.05em, 1px);
 }

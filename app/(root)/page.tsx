@@ -24,13 +24,13 @@ export default function HomePage() {
     <>
       <div className={`${styles.root} ${styles.home}`}>
         <div className={`${styles.intro}`}>
-          <p className={styles.xxl}>Hi, my name is Omeiza (/ɔ-mei-za/). I am a Web Full-stack Engineer based in Stockholm, Sweden.</p>
-          <p className={styles.xxl}>I build thoughtful products, stay curious about AI, and share lessons through my <Link href="/code-and-purpose" aria-label="Read Omeiza’s newsletter">newsletter</Link>.</p>
+          <p className={styles.xxl}>Hi, my name is Omeiza (/ɔ-mei-za/). I'm a Software Engineer based in Stockholm, Sweden.</p>
+          <p className={styles.xxl}>I build thoughtful products, stay curious about AI, and share lessons <Link href="/blog" aria-label="Read Omeiza's blog">here</Link>.</p>
         </div>
         <div className={`${styles.xxl} ${styles.tile} ${styles.extras}`}>
-          <Link href="/about" aria-label="Learn more about Omeiza">About Me &rarr;</Link>
-          <Link href="/projects" aria-label="See Omeiza’s projects">Projects &rarr;</Link>
-          <Link href="/code-and-purpose" aria-label="Read Omeiza’s newsletter">Newsletter &rarr;</Link>
+          <Link href="/about" aria-label="Learn more about Omeiza">About</Link>
+          <Link href="/blog" aria-label="See Omeiza's projects">Writing</Link>
+          <Link href="/code-and-purpose" aria-label="Read Omeiza's newsletter">Code & Purpose</Link>
         </div>
       </div>
     </>

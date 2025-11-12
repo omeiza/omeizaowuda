@@ -2,7 +2,7 @@
   display: grid;
   grid-gap: var(--sp-m);
   grid-template-columns: var(--grid-spec);
-  margin-top: var(--sp-s);
+  margin-top: var(--sp-xxl);
   flex-grow: 1;
 }
 

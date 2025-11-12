@@ -86,20 +86,24 @@ a.tile {
   display: grid;
   place-items: center;
   text-decoration: none;
-  border-top: 1px solid black;
+  border-top: 1px solid var(--gray30);
   transition: 0.075s ease;
   font-size: clamp(1rem, 8vmin, 2rem);
 }
 
 .extras a:nth-child(1) {
-  border-right: 1px solid black;
+  border-right: 1px solid var(--gray30);
 }
 
 .extras a:nth-child(2) {
-  border-right: 1px solid black;
+  border-right: 1px solid var(--gray30);
 }
 
-@media (prefers-color-scheme: dark) {
+/* .extras a:hover {
+  background-color: var(--big-link);
+} */
+
+/* @media (prefers-color-scheme: dark) {
   .extras a {
     border-top: 1px solid white;
   }
@@ -111,7 +115,7 @@ a.tile {
   .extras a:nth-child(2) {
     border-right: 1px solid white;
   }
-}
+} */
 
 .xxl {
   font-size: clamp(1.5rem, 8vmin, 3.5rem);
@@ -125,7 +129,6 @@ a.tile {
   --padding-size: 0.05em;
   font-family: var(--font-heading);
   letter-spacing: 0;
-  font-style: italic;
 }
 
 @media (max-width: 1000px) {

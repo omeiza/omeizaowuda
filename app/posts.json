@@ -1,30 +1,40 @@
 {
   "posts": [
     {
-      "id": "i-tried-generalism-and-i-hated-it",
-      "title": "I tried generalism and I hated it",
-      "image": "Requirements of tech roles are ever-changing and it is difficult to keep up.",
-      "description": "Requirements of tech roles are ever-changing and it is difficult to keep up.",
-      "date": "2023-11-06"
+      "id": "the-new-luddites-smashing-looms-dodging-algorithms",
+      "title": "The New Luddites: Smashing Looms, Dodging Algorithms",
+      "description": "The original Luddites weren't anti-tech cavemen - they were skilled craftspeople who feared being replaced by machines.",
+      "date": "2025-10-02"
     },
     {
-      "id": "finding-the-largest-prime-factor-of-a-number-using-c",
-      "title": "Finding the Largest Prime Factor of a Number Using C",
-      "image": "New to C programming",
-      "description": "Finding the Largest Prime Factor of a Number Using C",
-      "date": "2024-11-14"
+      "id": "a-pause-between-prompts-If-deloitte-had-stopped-for-fika",
+      "title": "A Pause between Prompts: If Deloitte Had Stopped for Fika",
+      "description": "The Deloitte story isn't shocking, it's familiar. It's what happens when efficiency becomes a virtue and reflection an afterthought.",
+      "date": "2025-10-09"
     },
     {
-      "id": "balancing-work-study-and-life-my-first-year-at-miva-university",
-      "title": "Balancing Work, Study, and Life: My First Year at Miva Open University",
-      "description": "Learning at Miva Open University: a journey of self-discipline, career growth, and transitioning to machine learning.",
-      "date": "2025-01-18"
+      "id": "click-click-click-the-sound-of-good-engineering",
+      "title": "Click Click Click: The Sound of Good Engineering",
+      "description": "AI isn't replacing coders; it's changing the way we code.",
+      "date": "2025-10-16"
     },
     {
-      "id": "i-am-still-teaching-coding-ai-will-not-replace-us",
-      "title": "I am still teaching coding – AI will not replace us",
-      "description": "AI isn’t replacing coders; it’s changing the way we code.",
-      "date": "2025-03-08"
+      "id": "code-cold-chaos",
+      "title": "Code, Cold & Chaos",
+      "description": "The weather is starting to reveal its true colors - colder, moodier, and definitely less forgiving.",
+      "date": "2025-10-23"
+    },
+    {
+      "id": "data-purpose-notes-from-curious-builder",
+      "title": "Data & Purpose: ​Notes from a Curious Builder",
+      "description": "At Activ, we're trying to change that - turning the chaos of news and media into structured insight.",
+      "date": "2025-10-30"
+    },
+    {
+      "id": "sam-altman-open-ai-1-point-4t-question",
+      "title": "Sam Altman: Open AI's $1.4T Question",
+      "description": "Brad Gerstner in conversation with Satya Nadella (Microsoft) and Sam Altman (OpenAI).",
+      "date": "2025-11-06"
     }
   ]
 }

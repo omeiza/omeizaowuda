@@ -25,7 +25,7 @@ export default function Blog() {
   return (
     <>
       <h1>Blog</h1>
-      <p>I've decided to wipe the slate clean.</p>
+      {/* <p>I've decided to wipe the slate clean.</p>
       <p>This site used to be a collection of scattered posts - bits and pieces from different times in my journey. Some of it still matters, some of it doesn’t. But instead of leaving behind clutter, I’m starting fresh.</p>
       <p>From here on, everything I write will focus on the ideas that matter most to me (and maybe to you too):</p>
       <ul>
@@ -34,8 +34,8 @@ export default function Blog() {
         <li><strong>Software Engineering</strong> - practical ways to write better code and thrive in tech.</li>
       </ul>
       <p>Think of this page as a placeholder, a marker for a new beginning. The real writing is coming soon.</p>
-      <p>Stay tuned - and thanks for being here from the start.</p>
-      {/* <ul className="plainlist post-list">
+      <p>Stay tuned - and thanks for being here from the start.</p> */}
+      <ul className="plainlist post-list">
         {posts
           .filter((post) => !post.hidden)
           .sort((lhs, rhs) => rhs.date.localeCompare(lhs.date))
@@ -52,7 +52,7 @@ export default function Blog() {
               </li>
             )
           })}
-      </ul> */}
+      </ul>
     </>
   )
 }
