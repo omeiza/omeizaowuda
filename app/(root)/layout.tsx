@@ -1,3 +1,4 @@
+import SkipLink from "../components/SkipLink";
 import {soehne, merriweatherText} from "../fonts";
 import sharedMetadata from "../metadata";
 import "../styles/global.css";
@@ -12,8 +13,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-      <html className={`${soehne.variable} ${merriweatherText.variable}`}>
+      <html className={`${soehne.variable} ${merriweatherText.variable}`} lang="en">
         <body>
+          <SkipLink />
           {children}
         </body>
         <GoogleAnalytics gaId="G-CWHKXNMD9G" />

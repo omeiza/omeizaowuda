@@ -19,8 +19,9 @@ export const metadata = sharedMetadata
 
 export default function BranchPageLayout({ children }: { children: React.ReactNode }) {
   return (
-      <html className={`${soehne.variable} ${merriweatherText.variable}`}>
+      <html className={`${soehne.variable} ${merriweatherText.variable}`} lang="en">
         <body>
+            <SkipLink />
             <div className={`sp-m ${jetbrainsMono.variable}`}>
                 <Header />
                 <Wrapper>{children}</Wrapper>
