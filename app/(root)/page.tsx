@@ -25,7 +25,7 @@ export default function HomePage() {
       <div className={`${styles.root} ${styles.home}`}>
         <div className={`${styles.intro}`}>
           <p className={styles.xxl}>Hi, my name is Omeiza (/ɔ-mei-za/). I'm a Software Engineer based in Stockholm, Sweden.</p>
-          <p className={styles.xxl}>I build thoughtful products, stay curious about AI, and <Link href="/blog" aria-label="Read Omeiza's blog">share lessons.</Link>.</p>
+          <p className={styles.xxl}>I build thoughtful products, stay curious about AI, and <Link href="/blog" aria-label="Read Omeiza's blog">share lessons</Link>.</p>
         </div>
         <div className={`${styles.xxl} ${styles.tile} ${styles.extras}`}>
           <Link href="/about" aria-label="Learn more about Omeiza">About</Link>
